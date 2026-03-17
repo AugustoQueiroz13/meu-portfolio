@@ -24,62 +24,62 @@ export default function App() {
   const projetos = [
     {
       titulo: "Bolsa Futuro Digital",
-      tipo: "Projetos Educacionais",
-      descricao: "Projetos desenvolvidos no âmbito do programa Bolsa Futuro Digital, focados no ensino e aplicação de tecnologias emergentes.",
-      techs: ["Educação", "Tecnologia", "Ensino"],
+      tipo: "Plataforma de Portfólio",
+      descricao: "Página desenvolvida para o programa Bolsa Futuro Digital, destacando projetos práticos e aplicações de tecnologias emergentes no ensino.",
+      techs: ["HTML", "CSS", "JavaScript"],
       link: "https://augustoqueiroz13.github.io/projetofinalbfdpetropolis/",
-      imagem: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1471&auto=format&fit=crop",
+      imagem: "https://hermes.dio.me/assets/articles/c4dc8d70-1e9a-408e-8c8e-c68f90541283.png",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaGraduationCap className="text-blue-400" size={24} /></div>
     },
     {
       titulo: "Nascente Pequena",
       tipo: "Site Institucional",
-      descricao: "Site oficial da Associação Cultural Nascente Pequena, apresentando os projetos sociais e culturais da instituição.",
-      techs: ["Web", "Frontend", "Institucional"],
+      descricao: "Portal da Associação Cultural Nascente Pequena, focado em dar visibilidade a projetos sociais, oficinas e iniciativas de desenvolvimento comunitário.",
+      techs: ["Web", "Design UI/UX", "Frontend"],
       link: "https://www.nascentepequena.org.br",
-      imagem: "https://images.unsplash.com/photo-1555448248-2571daf6344b?q=80&w=1470&auto=format&fit=crop",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/nascentepequena.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaGlobe className="text-blue-400" size={24} /></div>
     },
     {
       titulo: "Céu da Águia Dourada",
-      tipo: "Site Institucional",
-      descricao: "Plataforma desenvolvida em WordPress para apresentação da instituição, com foco em design e acessibilidade.",
-      techs: ["WordPress", "CMS", "Web Design"],
+      tipo: "Plataforma Institucional",
+      descricao: "Plataforma responsiva desenvolvida para a instituição. Projetada com foco em acessibilidade, identidade visual e gestão eficiente de conteúdo.",
+      techs: ["WordPress", "Web Design", "CMS"],
       link: "https://www.ceudaaguiadourada.com.br",
-      imagem: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1470&auto=format&fit=crop",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/ceudaaguiadourada.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaGlobe className="text-blue-400" size={24} /></div>
     },
     {
       titulo: "Robótica ACNP",
-      tipo: "Plataforma Educativa",
-      descricao: "Ambiente virtual de aprendizagem voltado para o ensino prático de robótica educacional e pensamento computacional.",
-      techs: ["Educação", "Plataforma", "Web"],
+      tipo: "Ambiente Virtual",
+      descricao: "Plataforma E-learning dedicada ao ensino prático de robótica educacional, com módulos interativos para lógica de programação e cultura maker.",
+      techs: ["E-learning", "Plataforma", "Web"],
       link: "https://roboticaacnp.com.br/educacional",
-      imagem: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1470&auto=format&fit=crop",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/roboticaeducacional.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaRobot className="text-blue-400" size={24} /></div>
     },
     {
       titulo: "Gráfica Delivery",
       tipo: "Sistema Administrativo",
-      descricao: "Desenvolvimento de melhorias e manutenção do sistema administrativo para otimização de processos internos.",
-      techs: ["Sistema", "Manutenção", "Backend"],
+      descricao: "Sistema de gestão e portal online para serviços gráficos, focado na otimização do fluxo de pedidos e acompanhamento de produção.",
+      techs: ["Sistema Web", "Backend", "E-commerce"],
       link: "http://www.graficadelivery.com",
-      imagem: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1430&auto=format&fit=crop",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/graficadelivery.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaLaptopCode className="text-blue-400" size={24} /></div>
     },
     {
       titulo: "Guia Guapimirim",
       tipo: "Portal de Informações",
-      descricao: "Site completo com guia de turismo, comércio e serviços da cidade de Guapimirim.",
-      techs: ["Web", "Portal", "Turismo"],
+      descricao: "Portal dinâmico de turismo, comércio e serviços locais. Projetado para valorizar a cidade de Guapimirim e facilitar o acesso à informação.",
+      techs: ["React", "Frontend", "Vercel"],
       link: "https://guapimirim-portal.vercel.app/a-cidade",
-      imagem: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1469&auto=format&fit=crop",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/guiaguapimirim.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaGlobe className="text-blue-400" size={24} /></div>
     },
     {
       titulo: "Sistema Dualy",
       tipo: "Sistema Web",
-      descricao: "Plataforma completa para gestão e operações. Foco em usabilidade e desempenho para o usuário final.",
+      descricao: "Plataforma completa para gestão e operações. Arquitetada com foco em estabilidade e usabilidade intuitiva para o usuário final.",
       techs: ["Web", "Sistema", "UI/UX"],
       link: "https://www.dualy.app.br",
       imagem: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop",
@@ -87,20 +87,20 @@ export default function App() {
     },
     {
       titulo: "Lógica e Código",
-      tipo: "Publicação / IA",
-      descricao: "Livro publicado sobre os fundamentos da programação em Python com IA. Um guia prático para o ensino de lógica.",
-      techs: ["Python", "IA", "Educação"],
-      link: "#",
-      imagem: "https://images.unsplash.com/photo-1526379095098-d400fd0bfce8?q=80&w=1470&auto=format&fit=crop",
+      tipo: "Publicação Científica",
+      descricao: "Obra didática sobre os fundamentos da programação em Python com IA. Um guia estruturado passo a passo para o desenvolvimento do raciocínio lógico.",
+      techs: ["Python", "IA", "Material Didático"],
+      link: null,
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/logicaecodigo.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaBookOpen className="text-blue-400" size={24} /></div>
     },
     {
-      titulo: "Smart Energy IoT",
+      titulo: "Monitoramento IoT (FAPERJ)",
       tipo: "Sistema Embarcado",
-      descricao: "Medidor digital de energia com monitoramento econômico. Captura e processa dados em tempo real via sensores.",
-      techs: ["C++", "IoT", "Microcontroladores"],
-      link: "#",
-      imagem: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1470&auto=format&fit=crop",
+      descricao: "Projeto financiado pela FAPERJ de um medidor digital de energia com análise econômica. Captura e transmite dados de consumo em tempo real.",
+      techs: ["C++", "IoT", "Sensores"],
+      link: null,
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/projetoiotfaperj.jfif",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaMicrochip className="text-blue-400" size={24} /></div>
     }
   ];
@@ -322,9 +322,11 @@ export default function App() {
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex justify-between items-start mb-4">
                     <p className="font-mono text-blue-400/80 text-xs">{projeto.tipo}</p>
-                    <a href={projeto.link} target="_blank" rel="noreferrer" className="p-2 bg-[#0a192f] rounded border border-slate-700 hover:border-blue-400 text-slate-400 hover:text-blue-400 transition-colors">
-                      <FaExternalLinkAlt size={14} />
-                    </a>
+                    {projeto.link && (
+                      <a href={projeto.link} target="_blank" rel="noreferrer" className="p-2 bg-[#0a192f] rounded border border-slate-700 hover:border-blue-400 text-slate-400 hover:text-blue-400 transition-colors">
+                        <FaExternalLinkAlt size={14} />
+                      </a>
+                    )}
                   </div>
 
                   <h3 className="text-xl font-bold text-[#ccd6f6] mb-3 group-hover:text-blue-400 transition-colors">{projeto.titulo}</h3>

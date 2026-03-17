@@ -63,7 +63,7 @@ export default function App() {
       tipo: "Sistema Administrativo",
       descricao: "Desenvolvimento de melhorias e manutenção do sistema administrativo para otimização de processos internos.",
       techs: ["Sistema", "Manutenção", "Backend"],
-      link: "https://roboticaacnp.com.br/educacional",
+      link: "http://www.graficadelivery.com",
       imagem: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1430&auto=format&fit=crop",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaLaptopCode className="text-blue-400" size={24} /></div>
     },
@@ -111,16 +111,16 @@ export default function App() {
     { nome: 'C++', icone: <SiCplusplus className="text-blue-600" size={20} /> },
     { nome: 'React', icone: <FaReact className="text-cyan-400" size={22} /> },
     { nome: 'Node.js', icone: <FaNodeJs className="text-green-500" size={22} /> },
+    { nome: 'UX/UI Design', icone: <FaPalette className="text-pink-400" size={20} /> },
+    { nome: 'Figma', icone: <SiFigma className="text-purple-400" size={20} /> },
+    { nome: 'Corel Draw', icone: <SiCoreldraw className="text-green-400" size={20} /> },
     { nome: 'Banco de Dados', icone: <FaDatabase className="text-indigo-400" size={20} /> },
     { nome: 'AWS', icone: <FaAws className="text-orange-400" size={22} /> },
     { nome: 'Linux', icone: <FaLinux className="text-slate-200" size={22} /> },
     { nome: 'Git', icone: <FaGitAlt className="text-red-500" size={22} /> },
     { nome: 'IoT', icone: <FaMicrochip className="text-teal-400" size={22} /> },
     { nome: 'Servidores', icone: <FaServer className="text-gray-400" size={20} /> },
-    { nome: 'Redes', icone: <FaNetworkWired className="text-blue-300" size={20} /> },
-    { nome: 'UX/UI Design', icone: <FaPalette className="text-pink-400" size={20} /> },
-    { nome: 'Figma', icone: <SiFigma className="text-purple-400" size={20} /> },
-    { nome: 'Corel Draw', icone: <SiCoreldraw className="text-green-400" size={20} /> }
+    { nome: 'Redes', icone: <FaNetworkWired className="text-blue-300" size={20} /> }
   ];
 
   const publicacoesList = [
@@ -256,13 +256,13 @@ export default function App() {
           <div className="grid md:grid-cols-5 gap-10">
             <div className="md:col-span-3 space-y-4 text-lg leading-relaxed">
               <p>
-                Trabalho na interseção entre o desenvolvimento de software, a engenharia da computação e a educação. Tenho facilidade em transitar do código front-end e back-end até o hardware físico, resolvendo problemas complexos com código limpo e eficiente.
+                Trabalho na interseção entre o <span className="text-blue-400 font-semibold">desenvolvimento de software</span>, a <span className="text-blue-400 font-semibold">engenharia da computação</span> e a <span className="text-blue-400 font-semibold">educação</span>. Tenho facilidade em transitar do <span className="text-blue-400 font-semibold">código front-end e back-end até o hardware físico</span>, resolvendo problemas complexos com código limpo e eficiente.
               </p>
               <p>
-                Já atuei com TI na iniciativa privada, no setor público e no terceiro setor. Essa vivência me deu uma visão ampla sobre como aplicar a tecnologia em diferentes cenários. Além da programação, possuo experiência prática em design gráfico e UX/UI, dominando ferramentas para a criação de arte final em materiais impressos e digitais. Hoje, divido meu tempo entre construir soluções digitais e liderar iniciativas educacionais, ensinando robótica e programação.
+                Já atuei com TI na iniciativa privada, no setor público e no terceiro setor. Essa vivência me deu uma visão ampla sobre como aplicar a tecnologia em diferentes cenários. Além da programação, possuo experiência prática em <span className="text-blue-400 font-semibold">design gráfico</span> e <span className="text-blue-400 font-semibold">UX/UI</span>, dominando ferramentas para a criação de <span className="text-blue-400 font-semibold">arte final em materiais impressos e digitais</span>. Hoje, divido meu tempo entre construir soluções digitais e liderar iniciativas educacionais, ensinando <span className="text-blue-400 font-semibold">robótica e programação</span>.
               </p>
               <p>
-                Acredito muito no poder da tecnologia na educação. Sou autor de materiais didáticos onde ensino sobre tecnologia, e dedico parte do meu tempo como Squad Leader no Code Club Brasil, além de atuar ativamente no Movimento Escoteiro e como músico percussionista.
+                Acredito muito no poder da tecnologia na educação. Sou <span className="text-blue-400 font-semibold">autor de materiais didáticos</span> onde ensino sobre tecnologia, e dedico parte do meu tempo como <span className="text-blue-400 font-semibold">Squad Leader no Code Club Brasil</span>, além de atuar ativamente no Movimento Escoteiro e como músico percussionista.
               </p>
             </div>
 
@@ -356,7 +356,7 @@ export default function App() {
 
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="relative pl-8 md:pl-12">
               <div className="absolute -left-[23px] top-0 bg-[#0a192f] p-2 rounded-full border border-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.2)]">
-                <FaDatabase size={16} className="text-blue-400" />
+                <FaDatabase size={16} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-[#ccd6f6] mb-1">Bussiness Intelligence, Big Data e Inteligencia Artificial</h3>
               <p className="text-blue-400 font-mono text-sm mb-3">Pós-graduação, Especialização | Faculdade Focus</p>
@@ -365,7 +365,7 @@ export default function App() {
 
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="relative pl-8 md:pl-12">
               <div className="absolute -left-[23px] top-0 bg-[#0a192f] p-2 rounded-full border border-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.2)]">
-                <FaMicrochip size={16} className="text-blue-400" />
+                <FaMicrochip size={16} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-[#ccd6f6] mb-1">Engenharia da Computação</h3>
               <p className="text-blue-400 font-mono text-sm mb-3">Pós-graduação, Especialização | Faculdade Focus</p>
@@ -374,19 +374,19 @@ export default function App() {
 
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="relative pl-8 md:pl-12">
               <div className="absolute -left-[23px] top-0 bg-[#0a192f] p-2 rounded-full border border-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.2)]">
-                <FaGraduationCap size={16} className="text-blue-400" />
+                <FaGraduationCap size={16} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-[#ccd6f6] mb-1">Análise e Desenvolvimento de Sistemas</h3>
               <p className="text-blue-400 font-mono text-sm mb-3">Graduação, Tecnólogo | UNICV - Centro Universitário Cidade Verde</p>
-              <p className="text-[#8892b0] text-sm leading-relaxed">Graduação focada em projeto, desenvolvimento, implementação e manutenação de softwares envolvendo análise de requisitos, bancos de dados, modelagem de sistemas e gestão de projetos.</p>
+              <p className="text-[#8892b0] text-sm leading-relaxed">Graduação focada em projeto, desenvolvimento, implementação e manutenção de softwares envolvendo análise de requisitos, bancos de dados, modelagem de sistemas e gestão de projetos.</p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.4 }} className="relative pl-8 md:pl-12">
               <div className="absolute -left-[23px] top-0 bg-[#0a192f] p-2 rounded-full border border-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.2)]">
-                <FaBolt size={16} className="text-blue-400" />
+                <FaBolt size={16} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-[#ccd6f6] mb-1">Eletrônica</h3>
-              <p className="text-blue-400 font-mono text-sm mb-3">Ensino Técnico | CQT - Centro de Qualificação  Técnica de Nova Friburgo</p>
+              <p className="text-blue-400 font-mono text-sm mb-3">Ensino Técnico | CQT - Centro de Qualificação Técnica de Nova Friburgo</p>
               <p className="text-[#8892b0] text-sm leading-relaxed">Formação técnica com base sólida em circuitos eletrônicos, manutenção de hardware, sensores e introdução a sistemas embarcados com ênfase em controle de processos industriais.</p>
             </motion.div>
 

@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { SiJavascript, SiCplusplus, SiFigma, SiCoreldraw } from 'react-icons/si';
+import { SiJavascript, SiCplusplus, SiFigma, SiCoreldraw, SiDjango } from 'react-icons/si';
 import {
   FaPython, FaReact, FaNodeJs, FaAws, FaLinux, FaDatabase, FaGitAlt,
   FaMicrochip, FaServer, FaNetworkWired, FaGithub, FaLinkedin, FaEnvelope,
   FaExternalLinkAlt, FaLaptopCode, FaRobot, FaGlobe, FaBookOpen,
   FaGraduationCap, FaBolt, FaTrophy, FaCertificate, FaUsers, FaStar,
   FaCompass, FaChevronDown, FaPalette, FaAmazon, FaShoppingCart,
-  FaChalkboardTeacher, FaClipboardCheck, FaCampground, FaAddressCard, FaMusic
+  FaChalkboardTeacher, FaClipboardCheck, FaCampground, FaAddressCard, FaMusic,
+  FaDocker, FaSync, FaBars, FaTimes
 } from 'react-icons/fa';
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [lang, setLang] = useState('pt');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +51,7 @@ export default function App() {
       publicacoesTitulo: "Publicações e Artigos",
       contatoSub: "O que vem a seguir?",
       contatoTitulo: "Entre em Contato",
-      contatoDesc: "Seja para discutir uma oportunidade, trocar ideias sobre tecnologia ou conversar sobre robótica educacional, minha caixa de entrada está sempre aberta.",
+      contatoDesc: "Seja para discutir uma oportunidade, trocar ideias sobre tecnologia ou conversar sobre iniciativas educacionais, minha caixa de entrada está sempre aberta.",
       btnContato: "Diga Olá",
       rodape: "Desenvolvido por Augusto Queiroz."
     },
@@ -77,7 +79,7 @@ export default function App() {
       publicacoesTitulo: "Publications & Articles",
       contatoSub: "What's next?",
       contatoTitulo: "Get In Touch",
-      contatoDesc: "Whether it's to discuss an opportunity, exchange ideas about technology, or talk about educational robotics, my inbox is always open.",
+      contatoDesc: "Whether it's to discuss an opportunity, exchange ideas about technology, or talk about educational initiatives, my inbox is always open.",
       btnContato: "Say Hello",
       rodape: "Developed by Augusto Queiroz."
     }
@@ -87,7 +89,7 @@ export default function App() {
     {
       titulo: lang === 'pt' ? "Bolsa Futuro Digital" : "Digital Future Grant",
       tipo: lang === 'pt' ? "Plataforma de Portfólio" : "Portfolio Platform",
-      descricao: lang === 'pt' ? "Página desenvolvida para o programa Bolsa Futuro Digital, destacando projetos práticos e aplicações de tecnologias emergentes no ensino." : "Page developed for the Digital Future Grant program, highlighting practical projects and applications of emerging technologies in education.",
+      descricao: lang === 'pt' ? "Página desenvolvida para orientar os projetos finais do programa Bolsa Futuro Digital, destacando os trabalhos apresentados pelos alunos em aplicações de tecnologias emergentes no ensino." : "Page developed for the Digital Future Grant program, highlighting practical projects and applications of emerging technologies in education.",
       techs: ["HTML", "CSS", "JavaScript"],
       link: "https://augustoqueiroz13.github.io/projetofinalbfdpetropolis/",
       imagem: "https://www.hardware.org.br/capacitacao/bfd/rs/inscricao/site_themes/theme_0001/images/site.png",
@@ -96,8 +98,8 @@ export default function App() {
     {
       titulo: "Nascente Pequena",
       tipo: lang === 'pt' ? "Site Institucional" : "Institutional Website",
-      descricao: lang === 'pt' ? "Portal da Associação Cultural Nascente Pequena, focado em dar visibilidade a projetos sociais, oficinas e iniciativas de desenvolvimento comunitário." : "Portal for the Nascente Pequena Cultural Association, focused on giving visibility to social projects, workshops, and community development initiatives.",
-      techs: ["Web", "Design UI/UX", "Frontend"],
+      descricao: lang === 'pt' ? "Site institucional da Associação Cultural Nascente Pequena, focado em dar visibilidade a projetos sociais, oficinas e iniciativas de desenvolvimento comunitário." : "Institutional website for the Nascente Pequena Cultural Association, focused on giving visibility to social projects, workshops, and community development initiatives.",
+      techs: ["Web", "Design UI/UX", "Frontend", "Node.js"],
       link: "https://www.nascentepequena.org.br",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/nascentepequena.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaGlobe className="text-blue-400" size={24} /></div>
@@ -105,7 +107,7 @@ export default function App() {
     {
       titulo: lang === 'pt' ? "Céu da Águia Dourada" : "Golden Eagle Sky",
       tipo: lang === 'pt' ? "Plataforma Institucional" : "Institutional Platform",
-      descricao: lang === 'pt' ? "Plataforma responsiva desenvolvida para a instituição. Projetada com foco em acessibilidade, identidade visual e gestão eficiente de conteúdo." : "Responsive platform developed for the institution. Designed with a focus on accessibility, visual identity, and efficient content management.",
+      descricao: lang === 'pt' ? "Página responsiva desenvolvida para a instituição. Projetada com foco em acessibilidade, identidade visual e gestão eficiente de conteúdo." : "Responsive platform developed for the institution. Designed with a focus on accessibility, visual identity, and efficient content management.",
       techs: ["WordPress", "Web Design", "CMS"],
       link: "https://www.ceudaaguiadourada.com.br",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/ceudaaguiadourada.jpg",
@@ -124,7 +126,7 @@ export default function App() {
       titulo: "Robótica ACNP",
       tipo: lang === 'pt' ? "Ambiente Virtual" : "Virtual Environment",
       descricao: lang === 'pt' ? "Plataforma E-learning dedicada ao ensino prático de robótica educacional, com módulos interativos para lógica de programação e cultura maker." : "E-learning platform dedicated to the practical teaching of educational robotics, with interactive modules for programming logic and maker culture.",
-      techs: ["E-learning", "Plataforma", "Web"],
+      techs: ["E-learning", "Plataforma", "Web", "React", "Node.js"],
       link: "https://roboticaacnp.com.br/educacional",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/roboticaeducacional.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaRobot className="text-blue-400" size={24} /></div>
@@ -142,7 +144,7 @@ export default function App() {
       titulo: "Guia Guapimirim",
       tipo: lang === 'pt' ? "Portal de Informações" : "Information Portal",
       descricao: lang === 'pt' ? "Portal dinâmico de turismo, comércio e serviços locais. Projetado para valorizar a cidade de Guapimirim e facilitar o acesso à informação." : "Dynamic portal for tourism, commerce, and local services. Designed to highlight the city of Guapimirim and facilitate access to information.",
-      techs: ["React", "Frontend", "Vercel"],
+      techs: ["React", "Frontend", "Backend", "Python", "Django"],
       link: "https://guapimirim-portal.vercel.app/a-cidade",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/guiaguapimirim.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaGlobe className="text-blue-400" size={24} /></div>
@@ -150,8 +152,8 @@ export default function App() {
     {
       titulo: "Sistema Dualy",
       tipo: "Sistema Web",
-      descricao: lang === 'pt' ? "Plataforma completa para gestão e operações. Arquitetada com foco em estabilidade e usabilidade intuitiva para o usuário final." : "Complete platform for management and operations. Architected with a focus on stability and intuitive usability for the end user.",
-      techs: ["Web", "Sistema", "UI/UX"],
+      descricao: lang === 'pt' ? "Plataforma completa para gestão e operações financeiras para pessoas físicas e pequenos empreendedores. Arquitetada com foco em estabilidade e usabilidade intuitiva para o usuário final." : "Complete platform for management and operations. Architected with a focus on stability and intuitive usability for the end user.",
+      techs: ["Web", "Sistema", "JavaScript", "UI/UX"],
       link: "https://www.dualy.app.br",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/dualy.jpg",
       icone: <div className="p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]"><FaLaptopCode className="text-blue-400" size={24} /></div>
@@ -171,7 +173,7 @@ export default function App() {
     {
       titulo: lang === 'pt' ? "Monitoramento IoT (FAPERJ)" : "IoT Monitoring (FAPERJ)",
       tipo: lang === 'pt' ? "Sistema Embarcado" : "Embedded System",
-      descricao: lang === 'pt' ? "Projeto financiado pela FAPERJ de um medidor digital de energia com análise econômica. Captura e transmite dados de consumo em tempo real." : "FAPERJ-funded project for a digital energy meter with economic analysis. Captures and transmits consumption data in real time.",
+      descricao: lang === 'pt' ? "Projeto financiado pela FAPERJ em parceria com a Faculdade Redentor, de um medidor digital de energia com análise econômica. Captura e transmite dados de consumo em tempo real." : "FAPERJ-funded project for a digital energy meter with economic analysis. Captures and transmits consumption data in real time.",
       techs: ["C++", "IoT", "Sensores"],
       link: null,
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/projetoiotfaperj.jfif",
@@ -185,11 +187,14 @@ export default function App() {
     { nome: 'C++', icone: <SiCplusplus className="text-blue-600" size={20} /> },
     { nome: 'React', icone: <FaReact className="text-cyan-400" size={22} /> },
     { nome: 'Node.js', icone: <FaNodeJs className="text-green-500" size={22} /> },
+    { nome: 'Django', icone: <SiDjango className="text-emerald-500" size={20} /> },
     { nome: 'UX/UI Design', icone: <FaPalette className="text-pink-400" size={20} /> },
+    { nome: 'Scrum', icone: <FaSync className="text-blue-400" size={20} /> },
     { nome: 'Figma', icone: <SiFigma className="text-purple-400" size={20} /> },
     { nome: 'Corel Draw', icone: <SiCoreldraw className="text-green-400" size={20} /> },
     { nome: lang === 'pt' ? 'Banco de Dados' : 'Databases', icone: <FaDatabase className="text-indigo-400" size={20} /> },
     { nome: 'AWS', icone: <FaAws className="text-orange-400" size={22} /> },
+    { nome: 'Docker', icone: <FaDocker className="text-blue-500" size={22} /> },
     { nome: 'Linux', icone: <FaLinux className="text-slate-200" size={22} /> },
     { nome: 'Git', icone: <FaGitAlt className="text-red-500" size={22} /> },
     { nome: 'IoT', icone: <FaMicrochip className="text-teal-400" size={22} /> },
@@ -226,12 +231,12 @@ export default function App() {
 
   const atuacoesList = [
     {
-      titulo: "Squad Leader & Instrutor, Code Club Brasil",
+      titulo: "Squad Leader & Instrutor - Code Club Brasil",
       desc: lang === 'pt' ? "Coordenação de líderes regionais e ensino de programação (Scratch, Python, HTML/CSS) para crianças, expandindo o alcance do projeto no Brasil." : "Coordination of regional leaders and teaching programming (Scratch, Python, HTML/CSS) to children, expanding the project's reach in Brazil.",
       icone: <FaChalkboardTeacher size={24} className="text-blue-400" />
     },
     {
-      titulo: lang === 'pt' ? "Juiz de Arena FLL, Torneio SESI de Robótica" : "FLL Arena Judge, SESI Robotics Tournament",
+      titulo: lang === 'pt' ? "Juiz de Arena FLL - Torneio SESI de Robótica" : "FLL Arena Judge, SESI Robotics Tournament",
       desc: lang === 'pt' ? "Atuação voluntária como juiz oficial no maior torneio de robótica LEGO (First LEGO League) do Brasil, avaliando projetos e robôs." : "Volunteer work as an official judge in the largest LEGO robotics tournament (First LEGO League) in Brazil, evaluating projects and robots.",
       icone: <FaClipboardCheck size={24} className="text-blue-400" />
     },
@@ -307,15 +312,17 @@ export default function App() {
     <div className="min-h-screen bg-[#0a192f] text-[#8892b0] font-sans selection:bg-blue-400/30 selection:text-blue-200">
 
       {/* Navegação Flutuante */}
-      <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a192f]/80 backdrop-blur-md py-4 shadow-lg shadow-black/20' : 'bg-transparent py-6'}`}>
-        <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a192f]/80 backdrop-blur-md py-4 shadow-lg shadow-black/20' : 'bg-transparent py-4 md:py-6'}`}>
+        <div className="max-w-6xl mx-auto px-6 flex justify-between items-center relative">
 
-          <div className="text-blue-400 font-mono font-bold text-xl md:text-2xl tracking-tighter flex items-center">
+          <div className="text-blue-400 font-mono font-bold text-xl md:text-2xl tracking-tighter flex items-center z-50">
             <TypeAnimation sequence={['Augusto Queiroz']} wrapper="span" cursor={false} speed={40} />
             <span className="animate-[pulse_0.6s_ease-in-out_infinite] ml-1 text-blue-400">_</span>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 md:gap-6">
+
+            {/* Navegação Desktop */}
             <div className="hidden lg:flex gap-6 font-mono text-sm">
               {t[lang].nav.map((item, i) => (
                 <a key={item} href={`#${t[lang].navIds[i]}`} className="hover:text-blue-400 transition-colors flex items-center gap-1">
@@ -324,19 +331,40 @@ export default function App() {
               ))}
             </div>
 
-            {/* Seletor de Idioma com Bandeiras */}
+            {/* Seletor de Idioma */}
             <div className="relative group cursor-pointer border border-slate-700 rounded px-3 py-1.5 bg-[#112240] text-sm z-50">
               <div className="flex items-center gap-2 text-slate-400 hover:text-blue-400">
-                {lang === 'pt' ? '🇧🇷 PT' : '🇬🇧 EN'} <FaChevronDown size={10} />
+                <img src={lang === 'pt' ? 'https://flagcdn.com/w20/br.png' : 'https://flagcdn.com/w20/gb.png'} alt="flag" className="w-5 rounded-sm" />
+                {lang === 'pt' ? 'PT' : 'EN'} <FaChevronDown size={10} />
               </div>
               <div className="absolute right-0 top-full mt-2 hidden group-hover:block bg-[#112240] border border-slate-700 rounded shadow-xl overflow-hidden w-36">
-                <button onClick={() => setLang('pt')} className="w-full flex items-center gap-2 text-left px-4 py-3 hover:bg-blue-500/10 text-slate-300 transition-colors">🇧🇷 Português</button>
-                <button onClick={() => setLang('en')} className="w-full flex items-center gap-2 text-left px-4 py-3 hover:bg-blue-500/10 text-slate-300 transition-colors">🇬🇧 English</button>
+                <button onClick={() => setLang('pt')} className="w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-blue-500/10 text-slate-300 transition-colors">
+                  <img src="https://flagcdn.com/w20/br.png" alt="BR" className="w-5 rounded-sm" /> Português
+                </button>
+                <button onClick={() => setLang('en')} className="w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-blue-500/10 text-slate-300 transition-colors">
+                  <img src="https://flagcdn.com/w20/gb.png" alt="EN" className="w-5 rounded-sm" /> English
+                </button>
               </div>
             </div>
-          </div>
 
+            {/* Botão Menu Mobile */}
+            <button className="lg:hidden text-blue-400 z-50 p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+
+          </div>
         </div>
+
+        {/* Navegação Mobile Dropdown */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden bg-[#112240] border-t border-slate-700 p-6 absolute top-full left-0 w-full shadow-2xl flex flex-col gap-6 font-mono text-base z-40">
+            {t[lang].nav.map((item, i) => (
+              <a key={item} href={`#${t[lang].navIds[i]}`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-400 transition-colors flex items-center gap-2">
+                <span className="text-blue-400">0{i + 1}.</span> {item}
+              </a>
+            ))}
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -354,7 +382,7 @@ export default function App() {
             </h1>
             <div className="text-2xl md:text-5xl font-bold h-[60px] md:h-[80px]">
               <TypeAnimation
-                key={lang} // Força recarregar a animação ao mudar idioma
+                key={lang}
                 sequence={t[lang].heroSequence}
                 wrapper="span"
                 speed={50}
@@ -563,6 +591,34 @@ export default function App() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
+
+            {/* Publicações - Agora vêm primeiro */}
+            <div className="p-8 bg-[#112240] border border-slate-700/50 rounded-xl">
+              <h3 className="text-xl font-bold text-[#ccd6f6] mb-6 flex items-center gap-4">
+                <div className="p-2.5 bg-blue-500/10 rounded-lg border border-blue-500/30">
+                  <FaCertificate className="text-blue-400" size={20} />
+                </div>
+                {t[lang].publicacoesTitulo}
+              </h3>
+
+              <ul className="space-y-6 text-[#8892b0]">
+                {publicacoesList.map((pub, idx) => (
+                  <li key={idx} className="relative pl-5 border-l-2 border-slate-700/50 hover:border-blue-400 transition-colors">
+                    <div className="absolute -left-[5px] top-2 w-2 h-2 rounded-full bg-blue-400"></div>
+                    <strong className="text-slate-200 block text-base mb-1">{pub.titulo}</strong>
+                    <span className="block text-sm mb-3">{pub.local}</span>
+                    <div className="flex flex-wrap gap-2">
+                      {pub.badges.map(b => (
+                        <span key={b} className="text-[10px] font-mono text-blue-300 bg-blue-900/30 px-2.5 py-1 rounded border border-blue-500/20">
+                          {b}
+                        </span>
+                      ))}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             {/* Prêmios */}
             <div className="p-8 bg-blue-900/10 border border-blue-500/20 rounded-xl relative overflow-hidden group">
               <div className="absolute -right-4 -top-4 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -589,32 +645,6 @@ export default function App() {
               </ul>
             </div>
 
-            {/* Publicações */}
-            <div className="p-8 bg-[#112240] border border-slate-700/50 rounded-xl">
-              <h3 className="text-xl font-bold text-[#ccd6f6] mb-6 flex items-center gap-4">
-                <div className="p-2.5 bg-blue-500/10 rounded-lg border border-blue-500/30">
-                  <FaCertificate className="text-blue-400" size={20} />
-                </div>
-                {t[lang].publicacoesTitulo}
-              </h3>
-
-              <ul className="space-y-6 text-[#8892b0]">
-                {publicacoesList.map((pub, idx) => (
-                  <li key={idx} className="relative pl-5 border-l-2 border-slate-700/50 hover:border-blue-400 transition-colors">
-                    <div className="absolute -left-[5px] top-2 w-2 h-2 rounded-full bg-blue-400"></div>
-                    <strong className="text-slate-200 block text-base mb-1">{pub.titulo}</strong>
-                    <span className="block text-sm mb-3">{pub.local}</span>
-                    <div className="flex flex-wrap gap-2">
-                      {pub.badges.map(b => (
-                        <span key={b} className="text-[10px] font-mono text-blue-300 bg-blue-900/30 px-2.5 py-1 rounded border border-blue-500/20">
-                          {b}
-                        </span>
-                      ))}
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </motion.div>
       </section>

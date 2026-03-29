@@ -247,7 +247,7 @@ export default function App() {
     },
     {
       titulo: lang === 'pt' ? "Análise e Desenvolvimento de Sistemas" : "Systems Analysis and Development",
-      tipo: lang === 'pt' ? "Graduação, Tecnólogo | UNICV - Centro Universitário Cidade Verde" : "Degree, Technologist | UNICV - Centro Universitário Cidade Verde",
+      tipo: lang === 'pt' ? "Graduação, Tecnólogo | UNICIVE - Centro Universitário Cidade Verde" : "Degree, Technologist | UNICV - Centro Universitário Cidade Verde",
       desc: lang === 'pt' ? "Graduação focada em projeto, desenvolvimento, implementação e manutenção de softwares envolvendo análise de requisitos, bancos de dados, modelagem de sistemas e gestão de projetos." : "Degree focused on software design, development, implementation, and maintenance, involving requirements analysis, databases, systems modeling, and project management.",
       icone: <FaGraduationCap size={16} className="text-white" />
     },

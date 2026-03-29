@@ -6,9 +6,9 @@ import {
   FaPython, FaReact, FaNodeJs, FaAws, FaLinux, FaDatabase, FaGitAlt,
   FaMicrochip, FaServer, FaNetworkWired, FaGithub, FaLinkedin, FaEnvelope,
   FaExternalLinkAlt, FaLaptopCode, FaRobot, FaGlobe, FaBookOpen,
-  FaGraduationCap, FaBolt, FaTrophy, FaCertificate, FaUsers,
+  FaGraduationCap, FaBolt, FaTrophy, FaCertificate,
   FaCompass, FaChevronDown, FaPalette, FaAmazon, FaShoppingCart,
-  FaChalkboardTeacher, FaClipboardCheck, FaCampground, FaAddressCard, FaMusic,
+  FaChalkboardTeacher, FaClipboardCheck, FaAddressCard, FaMusic,
   FaDocker, FaSync, FaBars, FaTimes
 } from 'react-icons/fa';
 
@@ -22,7 +22,7 @@ export default function App() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      // Detectar seção ativa para highlight no nav
+      // Detectar secao ativa para highlight no nav
       const sections = ['sobre', 'projetos', 'formacao', 'outras-atuacoes', 'reconhecimentos', 'contato'];
       for (const id of sections.reverse()) {
         const el = document.getElementById(id);
@@ -46,7 +46,7 @@ export default function App() {
     return () => { document.body.style.overflow = ''; };
   }, [isMobileMenuOpen]);
 
-  // Dicionário de Traduções
+  // Dicionario de Traducoes
   const t = {
     pt: {
       nav: ['Sobre', 'Projetos', 'Formação', 'Outras Atuações', 'Reconhecimentos', 'Contato'],
@@ -112,14 +112,14 @@ export default function App() {
       tipo: lang === 'pt' ? "Plataforma SaaS" : "SaaS Platform",
       descricao: lang === 'pt' ? "Sistema de gestão empresarial multi-tenant comercializado como SaaS. Cada empresa cliente possui dados isolados por accessKey e companyId, garantindo segurança e escalabilidade." : "Multi-tenant enterprise management system sold as SaaS. Each client company has isolated data via accessKey and companyId, ensuring security and scalability.",
       techs: ["Next.js 14", "TypeScript", "MongoDB", "Tailwind CSS", "Vercel", "Supabase"],
-      link: null,
+      link: "https://www.srpa.com.br/plataforma",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/srpa.jpg",
       icone: <FaLaptopCode className="text-blue-400" size={20} />
     },
     {
       titulo: lang === 'pt' ? "Bolsa Futuro Digital" : "Digital Future Grant",
       tipo: lang === 'pt' ? "Plataforma de Portfólio" : "Portfolio Platform",
-      descricao: lang === 'pt' ? "Página desenvolvida para orientar os projetos finais do programa Bolsa Futuro Digital, destacando os trabalhos apresentados pelos alunos em aplicações de tecnologias emergentes no ensino." : "Page developed for the Digital Future Grant program, highlighting practical projects and applications of emerging technologies in education.",
+      descricao: lang === 'pt' ? "Página desenvolvida para orientar os projetos finais do programa Bolsa Futuro Digital, projeto de âmbito nacional no qual atuei como instrutor e product owner, destacando os trabalhos apresentados pelos alunos em aplicações de tecnologias emergentes no ensino baseadas na OSD 4." : "Page developed for the Digital Future Grant program, highlighting practical projects and applications of emerging technologies in education.",
       techs: ["HTML", "CSS", "JavaScript"],
       link: "https://augustoqueiroz13.github.io/projetofinalbfdpetropolis/",
       imagem: "https://www.hardware.org.br/capacitacao/bfd/rs/inscricao/site_themes/theme_0001/images/site.png",
@@ -137,7 +137,7 @@ export default function App() {
     {
       titulo: lang === 'pt' ? "Céu da Águia Dourada" : "Golden Eagle Sky",
       tipo: lang === 'pt' ? "Plataforma Institucional" : "Institutional Platform",
-      descricao: lang === 'pt' ? "Página responsiva desenvolvida para a instituição. Projetada com foco em acessibilidade, identidade visual e gestão eficiente de conteúdo." : "Responsive platform developed for the institution. Designed with a focus on accessibility, visual identity, and efficient content management.",
+      descricao: lang === 'pt' ? "Página responsiva desenvolvida para o templo neo-xamânico. Projetada com foco nas informações do local para frequentadores e visitantes." : "Responsive page developed for the neo-shamanic temple. Designed with a focus on providing local information for attendees and visitors.",
       techs: ["WordPress", "Web Design", "CMS"],
       link: "https://www.ceudaaguiadourada.com.br",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/ceudaaguiadourada.jpg",
@@ -146,16 +146,16 @@ export default function App() {
     {
       titulo: lang === 'pt' ? "Jogos Olímpicos Rio 2016" : "Rio 2016 Olympic Games",
       tipo: lang === 'pt' ? "Suporte e Infraestrutura" : "Support & Infrastructure",
-      descricao: lang === 'pt' ? "Atuação técnica no comitê dos Jogos Olímpicos Rio 2016 pela Atos, garantindo o funcionamento crítico da infraestrutura de TI." : "Technical role in the Rio 2016 Olympic Games committee via Atos, ensuring the critical operation of the IT infrastructure.",
+      descricao: lang === 'pt' ? "Atuação técnica como Analista de Redes, Server Specialist, Analista de Suporte e Deployment no comitê dos Jogos Olímpicos Rio 2016 pela Atos, garantindo o funcionamento da infraestrutura de TI do maior evento esportivo do mundo." : "Technical role as Network Analyst, Server Specialist, Support Analyst, and Deployment at the Rio 2016 Olympic Games committee via Atos, ensuring the IT infrastructure of the world's largest sporting event.",
       techs: ["Infraestrutura", "Redes", "Suporte"],
       link: "https://www.youtube.com/watch?v=mjO3CaCKXVc",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/rio2016.jfif",
       icone: <FaNetworkWired className="text-blue-400" size={20} />
     },
     {
-      titulo: "Robótica ACNP",
+      titulo: "Curso de Robótica ACNP",
       tipo: lang === 'pt' ? "Ambiente Virtual" : "Virtual Environment",
-      descricao: lang === 'pt' ? "Plataforma E-learning dedicada ao ensino prático de robótica educacional, com módulos interativos para lógica de programação e cultura maker." : "E-learning platform dedicated to the practical teaching of educational robotics, with interactive modules for programming logic and maker culture.",
+      descricao: lang === 'pt' ? "Plataforma E-learning dedicada ao ensino prático de robótica educacional, com módulos interativos para lógica de programação, Robótica Educacional e cultura maker." : "E-learning platform dedicated to the practical teaching of educational robotics, with interactive modules for programming logic, Educational Robotics, and maker culture.",
       techs: ["E-learning", "Plataforma", "Web", "React", "Node.js"],
       link: "https://roboticaacnp.com.br/educacional",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/roboticaeducacional.jpg",
@@ -173,7 +173,7 @@ export default function App() {
     {
       titulo: "Guia Guapimirim",
       tipo: lang === 'pt' ? "Portal de Informações" : "Information Portal",
-      descricao: lang === 'pt' ? "Portal dinâmico de turismo, comércio e serviços locais. Projetado para valorizar a cidade de Guapimirim e facilitar o acesso à informação." : "Dynamic portal for tourism, commerce, and local services. Designed to highlight the city of Guapimirim and facilitate access to information.",
+      descricao: lang === 'pt' ? "Portal dinâmico de turismo, comércio e serviços locais. Projetado para valorizar a cidade de Guapimirim e facilitar o acesso a informações relevantes ao público local e turistas." : "Dynamic portal for tourism, commerce, and local services. Designed to highlight the city of Guapimirim and provide relevant information for locals and tourists.",
       techs: ["React", "Frontend", "Backend", "Python", "Django"],
       link: "https://guapimirim-portal.vercel.app/a-cidade",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/guiaguapimirim.jpg",
@@ -182,7 +182,7 @@ export default function App() {
     {
       titulo: "Sistema Dualy",
       tipo: "Sistema Web",
-      descricao: lang === 'pt' ? "Plataforma completa para gestão e operações financeiras para pessoas físicas e pequenos empreendedores. Arquitetada com foco em estabilidade e usabilidade intuitiva para o usuário final." : "Complete platform for management and operations. Architected with a focus on stability and intuitive usability for the end user.",
+      descricao: lang === 'pt' ? "Plataforma completa para gestão e operações financeiras para pessoas físicas e pequenos empreendedores. Arquitetada com foco em estabilidade e usabilidade intuitiva para o usuário final." : "Complete platform for management and financial operations for individuals and small entrepreneurs. Architected with a focus on stability and intuitive usability for the end user.",
       techs: ["Web", "Sistema", "JavaScript", "UI/UX"],
       link: "https://www.dualy.app.br",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/dualy.jpg",
@@ -201,9 +201,9 @@ export default function App() {
       icone: <FaBookOpen className="text-blue-400" size={20} />
     },
     {
-      titulo: lang === 'pt' ? "Monitoramento IoT (FAPERJ)" : "IoT Monitoring (FAPERJ)",
+      titulo: lang === 'pt' ? "Monitoramento IoT" : "IoT Monitoring",
       tipo: lang === 'pt' ? "Sistema Embarcado" : "Embedded System",
-      descricao: lang === 'pt' ? "Projeto financiado pela FAPERJ em parceria com a Faculdade Redentor, de um medidor digital de energia com análise econômica. Captura e transmite dados de consumo em tempo real." : "FAPERJ-funded project for a digital energy meter with economic analysis. Captures and transmits consumption data in real time.",
+      descricao: lang === 'pt' ? "Projeto financiado pela FAPERJ em parceria com a Faculdade Redentor, de um medidor digital de energia com análise econômica. Captura e transmite dados de consumo em tempo real. Projeto premiado em âmbito regional e nacional." : "FAPERJ-funded project in partnership with Faculdade Redentor, featuring a digital energy meter with economic analysis. Captures and transmits consumption data in real time. Award-winning project at regional and national level.",
       techs: ["C++", "IoT", "Sensores"],
       link: null,
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/projetoiotfaperj.jfif",
@@ -338,7 +338,7 @@ export default function App() {
     }
   ];
 
-  // Variantes de animação reutilizáveis
+  // Variantes de animacao reutilizaveis
   const fadeUp = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -349,13 +349,13 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0a192f] text-[#8892b0] font-sans selection:bg-blue-400/30 selection:text-blue-200">
 
-      {/* ═══ Elemento de fundo decorativo ═══ */}
+      {/* Elemento de fundo decorativo */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/[0.03] rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-500/[0.03] rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4"></div>
       </div>
 
-      {/* ═══ Navegação Flutuante ═══ */}
+      {/* Navegacao Flutuante */}
       <nav className={`fixed w-full top-0 z-50 transition-all duration-500 ${scrolled ? 'bg-[#0a192f]/85 backdrop-blur-lg py-3 shadow-lg shadow-black/20 border-b border-slate-800/50' : 'bg-transparent py-4 md:py-6'}`}>
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center relative">
 
@@ -366,7 +366,7 @@ export default function App() {
 
           <div className="flex items-center gap-4 md:gap-6">
 
-            {/* Navegação Desktop */}
+            {/* Navegacao Desktop */}
             <div className="hidden lg:flex gap-6 font-mono text-sm">
               {t[lang].nav.map((item, i) => (
                 <a
@@ -395,7 +395,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Botão Menu Mobile */}
+            {/* Botao Menu Mobile */}
             <button className="lg:hidden text-blue-400 z-50 p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Menu">
               {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
@@ -403,7 +403,7 @@ export default function App() {
           </div>
         </div>
 
-        {/* Navegação Mobile com AnimatePresence */}
+        {/* Navegacao Mobile com AnimatePresence */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <>
@@ -434,7 +434,7 @@ export default function App() {
         </AnimatePresence>
       </nav>
 
-      {/* ═══ Hero Section ═══ */}
+      {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center px-6 max-w-6xl mx-auto relative pt-20">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <motion.div
@@ -507,7 +507,7 @@ export default function App() {
         </motion.div>
       </section>
 
-      {/* ═══ 01. Sobre ═══ */}
+      {/* 01. Sobre */}
       <section id="sobre" className="py-24 px-6 max-w-4xl mx-auto scroll-mt-20 relative z-10">
         <motion.div {...fadeUp}>
           <div className="flex items-center gap-4 mb-10">
@@ -549,7 +549,7 @@ export default function App() {
         </motion.div>
       </section>
 
-      {/* ═══ 02. Projetos ═══ */}
+      {/* 02. Projetos */}
       <section id="projetos" className="py-24 px-6 max-w-6xl mx-auto scroll-mt-20 relative z-10">
         <motion.div {...fadeUp}>
           <div className="flex items-center gap-4 mb-16">
@@ -557,7 +557,7 @@ export default function App() {
             <div className="h-[1px] bg-gradient-to-r from-slate-700 to-transparent flex-grow"></div>
           </div>
 
-          {/* ══ Grid de Projetos ══ */}
+          {/* Grid de Projetos */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projetos.map((projeto, index) => (
               <motion.div
@@ -613,7 +613,7 @@ export default function App() {
         </motion.div>
       </section>
 
-      {/* ═══ 03. Formação Acadêmica ═══ */}
+      {/* 03. Formacao Academica */}
       <section id="formacao" className="py-24 px-6 max-w-4xl mx-auto scroll-mt-20 relative z-10">
         <motion.div {...fadeUp}>
           <div className="flex items-center gap-4 mb-16">
@@ -636,7 +636,7 @@ export default function App() {
         </motion.div>
       </section>
 
-      {/* ═══ 04. Outras Atuações ═══ */}
+      {/* 04. Outras Atuacoes */}
       <section id="outras-atuacoes" className="py-24 px-6 max-w-6xl mx-auto scroll-mt-20 relative z-10">
         <motion.div {...fadeUp}>
           <div className="flex items-center gap-4 mb-16">
@@ -667,7 +667,7 @@ export default function App() {
         </motion.div>
       </section>
 
-      {/* ═══ 05. Reconhecimentos ═══ */}
+      {/* 05. Reconhecimentos */}
       <section id="reconhecimentos" className="py-24 px-6 max-w-6xl mx-auto scroll-mt-20 relative z-10">
         <motion.div {...fadeUp}>
           <div className="flex items-center gap-4 mb-16">
@@ -677,7 +677,7 @@ export default function App() {
 
           <div className="grid md:grid-cols-2 gap-6">
 
-            {/* Publicações */}
+            {/* Publicacoes */}
             <div className="p-8 bg-[#112240] border border-slate-700/50 rounded-xl">
               <h3 className="text-xl font-bold text-[#ccd6f6] mb-6 flex items-center gap-4">
                 <div className="p-2.5 bg-blue-500/10 rounded-lg border border-blue-500/30">
@@ -704,7 +704,7 @@ export default function App() {
               </ul>
             </div>
 
-            {/* Prêmios */}
+            {/* Premios */}
             <div className="p-8 bg-blue-900/10 border border-blue-500/20 rounded-xl relative overflow-hidden group">
               <div className="absolute -right-4 -top-4 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
                 <FaTrophy size={120} />
@@ -734,7 +734,7 @@ export default function App() {
         </motion.div>
       </section>
 
-      {/* ═══ 06. Contato Final ═══ */}
+      {/* 06. Contato Final */}
       <section id="contato" className="py-32 px-6 max-w-2xl mx-auto text-center scroll-mt-20 relative z-10">
         <motion.div {...fadeUp}>
           <p className="text-blue-400 font-mono mb-4">06. {t[lang].contatoSub}</p>

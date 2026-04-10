@@ -117,9 +117,18 @@ export default function App() {
       icone: <FaLaptopCode className="text-blue-400" size={20} />
     },
     {
+      titulo: "Gall Boats",
+      tipo: lang === 'pt' ? "Site Institucional" : "Institutional Website",
+      descricao: lang === 'pt' ? "Site institucional desenvolvido para a Gall Boats, empresa de serviços marítimos com certificação ISO 9001 e atuação em offshore, salvamento e representação Mercury. Identidade visual em azul marinho, dourado e branco." : "Institutional website developed for Gall Boats, a maritime services company with ISO 9001 certification, operating in offshore, salvage, and Mercury dealership. Visual identity in navy blue, gold, and white.",
+      techs: ["Next.js", "Tailwind CSS", "Node.js", "PostgreSQL", "Prisma"],
+      link: "https://www.gallboats.com.br",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/gallboats.jpg",
+      icone: <FaGlobe className="text-blue-400" size={20} />
+    },
+    {
       titulo: lang === 'pt' ? "Bolsa Futuro Digital" : "Digital Future Grant",
       tipo: lang === 'pt' ? "Plataforma de Portfólio" : "Portfolio Platform",
-      descricao: lang === 'pt' ? "Página desenvolvida para orientar os projetos finais do programa Bolsa Futuro Digital, projeto de âmbito nacional no qual atuei como instrutor e product owner, destacando os trabalhos apresentados pelos alunos em aplicações de tecnologias emergentes no ensino baseadas na OSD 4." : "Page developed for the Digital Future Grant program, highlighting practical projects and applications of emerging technologies in education.",
+      descricao: lang === 'pt' ? "Página desenvolvida para orientar os projetos finais do programa Bolsa Futuro Digital, destacando os trabalhos apresentados pelos alunos em aplicações de tecnologias emergentes no ensino." : "Page developed for the Digital Future Grant program, highlighting practical projects and applications of emerging technologies in education.",
       techs: ["HTML", "CSS", "JavaScript"],
       link: "https://augustoqueiroz13.github.io/projetofinalbfdpetropolis/",
       imagem: "https://www.hardware.org.br/capacitacao/bfd/rs/inscricao/site_themes/theme_0001/images/site.png",
@@ -247,7 +256,7 @@ export default function App() {
     },
     {
       titulo: lang === 'pt' ? "Análise e Desenvolvimento de Sistemas" : "Systems Analysis and Development",
-      tipo: lang === 'pt' ? "Graduação, Tecnólogo | UNICIVE - Centro Universitário Cidade Verde" : "Degree, Technologist | UNICV - Centro Universitário Cidade Verde",
+      tipo: lang === 'pt' ? "Graduação, Tecnólogo | UNICV - Centro Universitário Cidade Verde" : "Degree, Technologist | UNICIVE - Centro Universitário Cidade Verde",
       desc: lang === 'pt' ? "Graduação focada em projeto, desenvolvimento, implementação e manutenção de softwares envolvendo análise de requisitos, bancos de dados, modelagem de sistemas e gestão de projetos." : "Degree focused on software design, development, implementation, and maintenance, involving requirements analysis, databases, systems modeling, and project management.",
       icone: <FaGraduationCap size={16} className="text-white" />
     },

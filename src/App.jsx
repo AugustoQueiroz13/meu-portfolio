@@ -17,6 +17,7 @@ export default function App() {
   const [lang, setLang] = useState('pt');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [isLangOpen, setIsLangOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,7 +75,7 @@ export default function App() {
       contatoTitulo: "Entre em Contato",
       contatoDesc: "Seja para discutir uma oportunidade, trocar ideias sobre tecnologia ou conversar sobre iniciativas educacionais, minha caixa de entrada está sempre aberta.",
       btnContato: "Diga Olá",
-      rodape: "Desenvolvido por Augusto Queiroz."
+      rodape: "Desenvolvido com React por Augusto Queiroz."
     },
     en: {
       nav: ['About', 'Projects', 'Education', 'Other Roles', 'Recognitions', 'Contact'],
@@ -102,7 +103,7 @@ export default function App() {
       contatoTitulo: "Get In Touch",
       contatoDesc: "Whether it's to discuss an opportunity, exchange ideas about technology, or talk about educational initiatives, my inbox is always open.",
       btnContato: "Say Hello",
-      rodape: "Developed by Augusto Queiroz."
+      rodape: "Built with React by Augusto Queiroz."
     }
   };
 
@@ -129,7 +130,7 @@ export default function App() {
       titulo: lang === 'pt' ? "Bolsa Futuro Digital" : "Digital Future Grant",
       tipo: lang === 'pt' ? "Plataforma de Portfólio" : "Portfolio Platform",
       descricao: lang === 'pt' ? "Página desenvolvida para orientar os projetos finais do programa Bolsa Futuro Digital no qual atuei como professor instruindo 40+ alunos nas stacks de JavaScript/React e Python/Django, destacando os trabalhos finais apresentados pelos alunos em aplicações de tecnologias emergentes no ensino baseados na ODS 4." : "Page developed for the Digital Future Grant program, highlighting practical projects and applications of emerging technologies in education.",
-      techs: ["Ensino", "Python", "Django", "React", "HTML", "CSS", "JavaScript"],
+      techs: [lang === 'pt' ? "Ensino" : "Teaching", "Python", "Django", "React", "HTML", "CSS", "JavaScript"],
       link: "https://augustoqueiroz13.github.io/projetofinalbfdpetropolis/",
       imagem: "https://www.hardware.org.br/capacitacao/bfd/rs/inscricao/site_themes/theme_0001/images/site.png",
       icone: <FaGraduationCap className="text-blue-400" size={20} />
@@ -156,7 +157,7 @@ export default function App() {
       titulo: lang === 'pt' ? "Jogos Olímpicos Rio 2016" : "Rio 2016 Olympic Games",
       tipo: lang === 'pt' ? "Suporte e Infraestrutura" : "Support & Infrastructure",
       descricao: lang === 'pt' ? "Atuação técnica como Analista de Redes, Server Specialist, Analista de Suporte e Deployment no comitê dos Jogos Olímpicos Rio 2016 pela Atos, garantindo o funcionamento da infraestrutura de TI do maior evento esportivo do mundo." : "Technical role as Network Analyst, Server Specialist, Support Analyst, and Deployment at the Rio 2016 Olympic Games committee via Atos, ensuring the IT infrastructure of the world's largest sporting event.",
-      techs: ["Infraestrutura", "Redes", "Suporte"],
+      techs: [lang === 'pt' ? "Infraestrutura" : "Infrastructure", lang === 'pt' ? "Redes" : "Networks", lang === 'pt' ? "Suporte" : "Support"],
       link: "https://www.youtube.com/watch?v=mjO3CaCKXVc",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/rio2016.jfif",
       icone: <FaNetworkWired className="text-blue-400" size={20} />
@@ -165,7 +166,7 @@ export default function App() {
       titulo: "Curso de Robótica ACNP",
       tipo: lang === 'pt' ? "Ambiente Virtual" : "Virtual Environment",
       descricao: lang === 'pt' ? "Plataforma E-learning dedicada ao ensino prático de robótica educacional, com módulos interativos para lógica de programação, Robótica Educacional e cultura maker." : "E-learning platform dedicated to the practical teaching of educational robotics, with interactive modules for programming logic, Educational Robotics, and maker culture.",
-      techs: ["E-learning", "Plataforma", "Web", "React", "Node.js"],
+      techs: ["E-learning", lang === 'pt' ? "Plataforma" : "Platform", "Web", "React", "Node.js"],
       link: "https://roboticaacnp.com.br/educacional",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/roboticaeducacional.jpg",
       icone: <FaRobot className="text-blue-400" size={20} />
@@ -174,7 +175,7 @@ export default function App() {
       titulo: "Gráfica Delivery",
       tipo: lang === 'pt' ? "Sistema Administrativo" : "Administrative System",
       descricao: lang === 'pt' ? "Sistema de gestão e portal online para serviços gráficos, focado na otimização do fluxo de pedidos e acompanhamento de produção." : "Management system and online portal for printing services, focused on optimizing the order flow and production tracking.",
-      techs: ["Sistema Web", "Backend", "E-commerce"],
+      techs: [lang === 'pt' ? "Sistema Web" : "Web System", "Backend", "E-commerce"],
       link: "http://www.graficadelivery.com",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/graficadelivery.jpg",
       icone: <FaLaptopCode className="text-blue-400" size={20} />
@@ -192,7 +193,7 @@ export default function App() {
       titulo: "Sistema Dualy",
       tipo: "Sistema Web",
       descricao: lang === 'pt' ? "Plataforma completa para gestão e operações financeiras para pessoas físicas e pequenos empreendedores. Arquitetada com foco em estabilidade e usabilidade intuitiva para o usuário final." : "Complete platform for management and financial operations for individuals and small entrepreneurs. Architected with a focus on stability and intuitive usability for the end user.",
-      techs: ["Web", "Sistema", "JavaScript", "UI/UX"],
+      techs: ["Web", lang === 'pt' ? "Sistema" : "System", "JavaScript", "UI/UX"],
       link: "https://www.dualy.app.br",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/dualy.jpg",
       icone: <FaLaptopCode className="text-blue-400" size={20} />
@@ -201,7 +202,7 @@ export default function App() {
       titulo: lang === 'pt' ? "Lógica e Código" : "Logic and Code",
       tipo: lang === 'pt' ? "Publicação Científica" : "Scientific Publication",
       descricao: lang === 'pt' ? "Obra didática sobre os fundamentos da programação em Python com IA. Um guia estruturado passo a passo para o desenvolvimento do raciocínio lógico e ensino da linguagem Python para iniciantes." : "Educational book on the fundamentals of Python programming with AI. A structured step-by-step guide to developing logical reasoning.",
-      techs: ["Python", "IA", "Material Didático"],
+      techs: ["Python", lang === 'pt' ? "IA" : "AI", lang === 'pt' ? "Material Didático" : "Teaching Material"],
       links: [
         { url: "https://www.amazon.com.br/L%C3%B3gica-C%C3%B3digo-Fundamentos-Programa%C3%A7%C3%A3o-Python/dp/6501819113", label: "Amazon", icon: <FaAmazon size={14} /> },
         { url: "https://loja.uiclap.com/titulo/ua133185/", label: "Uiclap", icon: <FaShoppingCart size={14} /> }
@@ -222,13 +223,13 @@ export default function App() {
 
   const hardSkills = [
     { nome: 'Python', icone: <FaPython className="text-blue-500" size={22} /> },
-    { nome: 'Java', icone: <FaJava className="text-red-500" size={22} /> },
-    { nome: 'Spring Boot', icone: <SiSpringboot className="text-green-500" size={20} /> },
     { nome: 'JavaScript', icone: <SiJavascript className="text-yellow-400" size={20} /> },
     { nome: 'C++', icone: <SiCplusplus className="text-blue-600" size={20} /> },
     { nome: 'React', icone: <FaReact className="text-cyan-400" size={22} /> },
     { nome: 'Node.js', icone: <FaNodeJs className="text-green-500" size={22} /> },
     { nome: 'Django', icone: <SiDjango className="text-emerald-500" size={20} /> },
+    { nome: 'Java', icone: <FaJava className="text-red-500" size={22} /> },
+    { nome: 'Spring Boot', icone: <SiSpringboot className="text-green-500" size={20} /> },
     { nome: 'UX/UI Design', icone: <FaPalette className="text-pink-400" size={20} /> },
     { nome: 'Scrum', icone: <FaSync className="text-blue-400" size={20} /> },
     { nome: 'Figma', icone: <SiFigma className="text-purple-400" size={20} /> },
@@ -307,7 +308,7 @@ export default function App() {
     },
     {
       titulo: lang === 'pt' ? "Prêmio Nacional de Inovação Atech" : "Atech National Innovation Award",
-      local: "VI FEBRACE",
+      local: "VI FEBRACE - Escola Politécnica da USP - São Paulo, SP",
       desc: lang === 'pt' ? "Vencedor nacional da categoria de inovação com o projeto do Medidor Digital de Energia Elétrica." : "National winner in the innovation category with the Digital Electrical Energy Meter project."
     },
     {
@@ -326,7 +327,7 @@ export default function App() {
     {
       titulo: lang === 'pt' ? "Modelagem Computacional de Dados Urbanos: Integração de Sensores e Python para Monitoramento em Cidades Inteligentes" : "Computational Modeling of Urban Data: Integration of Sensors and Python for Monitoring in Smart Cities",
       local: lang === 'pt' ? "ERMAC Regional 8 · Encontro Regional de Matemática Aplicada e Computacional · INPE – São José dos Campos, SP" : "ERMAC Regional 8 · Regional Meeting of Applied and Computational Mathematics · INPE – São José dos Campos, SP",
-      badges: [lang === 'pt' ? "Artigo Aceito" : "Accepted Paper", lang === 'pt' ? "Apresentação em Pôster" : "Poster Presentation", "16–18 Jun 2026"]
+      badges: [lang === 'pt' ? "Artigo Aceito" : "Accepted Paper", lang === 'pt' ? "Apresentação em Pôster" : "Poster Presentation", "2026"]
     },
     {
       titulo: lang === 'pt' ? "Curso de Robótica Educacional" : "Educational Robotics Course",
@@ -340,17 +341,17 @@ export default function App() {
     },
     {
       titulo: lang === 'pt' ? "Medidor de Energia Elétrica Digital com Monitoração Econômica" : "Digital Electric Energy Meter with Economic Monitoring",
-      local: "VI FEBRACE",
+      local: "VI FEBRACE · Feira Brasileira de Ciências e Engenharia - Escola Politécnica da USP - São Paulo, SP",
       badges: [lang === 'pt' ? "Anais e Feira" : "Annals & Fair", "ISBN 978-85-86686-47-4"]
     },
     {
       titulo: lang === 'pt' ? "Automação do Sistema de Fornecimento de Energia Elétrica Pública" : "Automation of the Public Electrical Energy Supply System",
-      local: lang === 'pt' ? "9ª e 10ª Bienal de Arte, Ciência e Cultura da UNE" : "9th & 10th UNE Biennial of Art, Science and Culture",
+      local: lang === 'pt' ? "9ª e 10ª Bienal de Arte, Ciência e Cultura da UNE | Fundição Progresso - Rio de Janeiro, RJ / Dragão do Mar - Fortaleza, CE" : "9th & 10th UNE Biennial of Art, Science and Culture",
       badges: [lang === 'pt' ? "Anais de Congresso" : "Congress Annals", "ISBN 9788561839215 / 9788561839178"]
     },
     {
       titulo: lang === 'pt' ? "Automatização do Sistema de Fornecimento de Energia Elétrica Pública" : "Automation of the Public Electrical Energy Supply System",
-      local: "13º e 14º CONIC SEMESP",
+      local: "13º e 14º CONIC SEMESP | São Paulo, SP / Campinas, SP",
       badges: [lang === 'pt' ? "Anais de Congresso" : "Congress Annals", "ISSN 2357-8904"]
     }
   ];
@@ -397,19 +398,37 @@ export default function App() {
             </div>
 
             {/* Seletor de Idioma */}
-            <div className="relative group cursor-pointer border border-slate-700 rounded-lg px-3 py-1.5 bg-[#112240]/80 backdrop-blur-sm text-sm z-50 hover:border-blue-400/40 transition-colors">
-              <div className="flex items-center gap-2 text-slate-400 group-hover:text-blue-400">
+            <div className="relative z-50">
+              <button
+                onClick={() => setIsLangOpen(prev => !prev)}
+                className={`flex items-center gap-2 border rounded-lg px-3 py-1.5 bg-[#112240]/80 backdrop-blur-sm text-sm transition-colors ${isLangOpen ? 'border-blue-400/40 text-blue-400' : 'border-slate-700 text-slate-400 hover:border-blue-400/40 hover:text-blue-400'}`}
+              >
                 <img src={lang === 'pt' ? 'https://flagcdn.com/w20/br.png' : 'https://flagcdn.com/w20/gb.png'} alt="flag" className="w-5 rounded-sm" />
-                {lang === 'pt' ? 'PT' : 'EN'} <FaChevronDown size={10} className="transition-transform group-hover:rotate-180" />
-              </div>
-              <div className="absolute right-0 top-full mt-2 hidden group-hover:block bg-[#112240] border border-slate-700 rounded-lg shadow-2xl shadow-black/40 overflow-hidden w-36">
-                <button onClick={() => setLang('pt')} className={`w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-blue-500/10 transition-colors ${lang === 'pt' ? 'text-blue-400 bg-blue-500/5' : 'text-slate-300'}`}>
-                  <img src="https://flagcdn.com/w20/br.png" alt="BR" className="w-5 rounded-sm" /> Português
-                </button>
-                <button onClick={() => setLang('en')} className={`w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-blue-500/10 transition-colors ${lang === 'en' ? 'text-blue-400 bg-blue-500/5' : 'text-slate-300'}`}>
-                  <img src="https://flagcdn.com/w20/gb.png" alt="EN" className="w-5 rounded-sm" /> English
-                </button>
-              </div>
+                {lang === 'pt' ? 'PT' : 'EN'}
+                <FaChevronDown size={10} className={`transition-transform duration-200 ${isLangOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              <AnimatePresence>
+                {isLangOpen && (
+                  <>
+                    <div className="fixed inset-0" onClick={() => setIsLangOpen(false)} />
+                    <motion.div
+                      initial={{ opacity: 0, y: -8, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: -8, scale: 0.95 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute right-0 top-full mt-2 bg-[#112240] border border-slate-700 rounded-lg shadow-2xl shadow-black/40 overflow-hidden w-36"
+                    >
+                      <button onClick={() => { setLang('pt'); setIsLangOpen(false); }} className={`w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-blue-500/10 transition-colors ${lang === 'pt' ? 'text-blue-400 bg-blue-500/5' : 'text-slate-300'}`}>
+                        <img src="https://flagcdn.com/w20/br.png" alt="BR" className="w-5 rounded-sm" /> Português
+                      </button>
+                      <button onClick={() => { setLang('en'); setIsLangOpen(false); }} className={`w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-blue-500/10 transition-colors ${lang === 'en' ? 'text-blue-400 bg-blue-500/5' : 'text-slate-300'}`}>
+                        <img src="https://flagcdn.com/w20/gb.png" alt="EN" className="w-5 rounded-sm" /> English
+                      </button>
+                    </motion.div>
+                  </>
+                )}
+              </AnimatePresence>
             </div>
 
             {/* Botao Menu Mobile */}
@@ -775,7 +794,11 @@ export default function App() {
       </section>
 
       <footer className="py-8 text-center text-sm font-mono text-slate-500 border-t border-slate-800/50">
-        <p>{t[lang].rodape}</p>
+        <p className="flex items-center justify-center gap-2">
+          {lang === 'pt' ? 'Desenvolvido com' : 'Built with'}
+          <FaReact className="text-cyan-400 animate-spin" style={{ animationDuration: '8s' }} size={15} />
+          {lang === 'pt' ? 'React por Augusto Queiroz.' : 'React by Augusto Queiroz.'}
+        </p>
       </footer>
     </div>
   );

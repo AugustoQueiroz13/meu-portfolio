@@ -9,7 +9,7 @@ import {
   FaGraduationCap, FaBolt, FaTrophy, FaCertificate,
   FaCompass, FaChevronDown, FaPalette, FaAmazon, FaShoppingCart,
   FaChalkboardTeacher, FaClipboardCheck, FaAddressCard, FaMusic,
-  FaDocker, FaSync, FaBars, FaTimes
+  FaDocker, FaSync, FaBars, FaTimes, FaBrain
 } from 'react-icons/fa';
 
 // Dicionario de Traducoes
@@ -298,7 +298,9 @@ export default function App() {
     { nome: 'Node.js', icone: <FaNodeJs className="text-green-500" size={22} /> },
     { nome: 'Django', icone: <SiDjango className="text-emerald-500" size={20} /> },
     { nome: 'Java', icone: <FaJava className="text-red-500" size={22} /> },
-    { nome: 'Spring Boot', icone: <SiSpringboot className="text-green-500" size={20} /> },
+    { nome: 'Machine Learning', icone: <FaRobot className="text-purple-500" size={22} /> },
+    { nome: 'IA', icone: <FaBrain className="text-indigo-500" size={22} /> },
+    { nome: 'Arduino', icone: <FaMicrochip className="text-teal-500" size={22} /> },
     { nome: 'UX/UI Design', icone: <FaPalette className="text-pink-400" size={20} /> },
     { nome: 'Scrum', icone: <FaSync className="text-blue-400" size={20} /> },
     { nome: 'Figma', icone: <SiFigma className="text-purple-400" size={20} /> },

@@ -72,7 +72,7 @@ const TRANSLATIONS = {
   }
 };
 
-const HARD_SKILLS = [
+export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [lang, setLang] = useState('pt');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

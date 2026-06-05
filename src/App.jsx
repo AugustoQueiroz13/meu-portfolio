@@ -169,11 +169,11 @@ export default function App() {
 
   const projetos = [
     {
-      titulo: lang === 'pt' ? "Firjan SESI SENAI Tecnologia" : "Firjan SESI SENAI Technology",
+      titulo: lang === 'pt' ? "Firjan SENAI SESI Tecnologia" : "Firjan SENAI SESI Technology",
       tipo: lang === 'pt' ? "Pesquisa & Desenvolvimento | Bolsista" : "Research & Development | Scholar",
       descricao: lang === 'pt' ? "Atuação como Engenheiro de Machine Learning Pesquisador Bolsista no Instituto SENAI de Inovação em Química Verde (ISI-QV). Desenvolvimento de algoritmos de aprendizado de máquina aplicados a projetos de Pesquisa, Desenvolvimento e Inovação (PDI) com foco em solucionar problemas industriais reais. Integração de modelos de IA com hardwares dedicados, especialmente Raspberry Pi e placas embarcadas, para operação de serviços tecnológicos em ambiente de produção." : "Role as Machine Learning Engineer Scholar at SENAI Institute for Green Chemistry Innovation (ISI-QV). Development of machine learning algorithms applied to Research, Development & Innovation projects focusing on solving real industrial problems. Integration of AI models with dedicated hardware, especially Raspberry Pi and embedded boards, for operation of technological services in production environments.",
       techs: ["Python", "Pandas", "Scikit-Learn", "Raspberry Pi", "Edge AI", "Docker", "SQL", "Git"],
-      link: "https://www.firjan.com.br/senai",
+      link: "https://www.firjan.com.br/senai/empresas/competitividade-empresarial/tecnologia-inovacao/linhas-de-pesquisa.htm",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/firjan-sesi-senai.jfif",
       icone: <FaRobot className="text-blue-400" size={20} />
     },

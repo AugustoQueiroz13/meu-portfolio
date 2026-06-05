@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { SiJavascript, SiCplusplus, SiFigma, SiCoreldraw, SiDjango, SiSpringboot } from 'react-icons/si';
+import { SiJavascript, SiCplusplus, SiFigma, SiCoreldraw, SiDjango, SiSpringboot, SiRaspberrypi } from 'react-icons/si';
 import {
   FaPython, FaJava, FaReact, FaNodeJs, FaAws, FaLinux, FaDatabase, FaGitAlt,
   FaMicrochip, FaServer, FaNetworkWired, FaGithub, FaLinkedin, FaEnvelope,
@@ -109,6 +109,14 @@ export default function App() {
 
   const projetos = [
     {
+      titulo: lang === 'pt' ? "Engenheiro de Machine Learning - Firjan SENAI" : "Machine Learning Engineer - Firjan SENAI",
+      tipo: lang === 'pt' ? "Pesquisa & Desenvolvimento | Bolsista" : "Research & Development | Scholar",
+      descricao: lang === 'pt' ? "Atuação como Engenheiro de Machine Learning Pesquisador Bolsista no Instituto SENAI de Inovação em Química Verde (ISI-QV). Desenvolvimento de algoritmos de aprendizado de máquina aplicados a projetos de Pesquisa, Desenvolvimento e Inovação (PDI) com foco em solucionar problemas industriais reais. Integração de modelos de IA com hardwares dedicados, especialmente Raspberry Pi e placas embarcadas, para operação de serviços tecnológicos em ambiente de produção." : "Role as Machine Learning Engineer Scholar at SENAI Institute for Green Chemistry Innovation (ISI-QV). Development of machine learning algorithms applied to Research, Development & Innovation projects focusing on solving real industrial problems. Integration of AI models with dedicated hardware, especially Raspberry Pi and embedded boards, for operation of technological services in production environments.",
+      techs: ["Python", "Pandas", "Scikit-Learn", "Raspberry Pi", "Edge AI", "Docker", "SQL", "Git"],
+      link: "https://www.firjan.com.br/senai",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/firjan-senai.jpg",
+      icone: <FaRobot className="text-blue-400" size={20} />
+    },
       titulo: "SRPA Software",
       tipo: lang === 'pt' ? "Plataforma SaaS" : "SaaS Platform",
       descricao: lang === 'pt' ? "Desenvolvimento de módulos para sistema de gestão empresarial multi-tenant comercializado como SaaS para controles de tarefas, documentos, planejamentos e outros recursos. Cada empresa cliente possui dados isolados por accessKey e companyId, garantindo segurança e escalabilidade." : "Multi-tenant enterprise management system sold as SaaS. Each client company has isolated data via accessKey and companyId, ensuring security and scalability.",
@@ -237,6 +245,7 @@ export default function App() {
     { nome: lang === 'pt' ? 'Banco de Dados' : 'Databases', icone: <FaDatabase className="text-indigo-400" size={20} /> },
     { nome: 'AWS', icone: <FaAws className="text-orange-400" size={22} /> },
     { nome: 'Docker', icone: <FaDocker className="text-blue-500" size={22} /> },
+    { nome: 'Raspberry Pi', icone: <SiRaspberrypi className="text-red-500" size={22} /> },
     { nome: 'Linux', icone: <FaLinux className="text-slate-200" size={22} /> },
     { nome: 'Git', icone: <FaGitAlt className="text-red-500" size={22} /> },
     { nome: 'GitHub', icone: <FaGithub className="text-slate-200" size={22} /> },

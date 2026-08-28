@@ -599,7 +599,7 @@ export default function App() {
             <div className="absolute inset-0 border-2 border-blue-400/60 rounded-full translate-x-5 translate-y-5 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-300"></div>
             <div className="absolute inset-0 bg-blue-400/10 rounded-full group-hover:bg-transparent transition-colors duration-300 z-10"></div>
             <img
-              src="https://roboticaacnp.com.br/educacional/professor.jpg"
+              src="https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4206442U7"
               alt="Augusto Queiroz"
               className="absolute inset-0 w-full h-full object-cover rounded-full z-0"
             />

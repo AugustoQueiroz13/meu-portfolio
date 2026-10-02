@@ -12,66 +12,6 @@ import {
   FaDocker, FaSync, FaBars, FaTimes, FaBrain
 } from 'react-icons/fa';
 
-// Dicionario de Traducoes
-const TRANSLATIONS = {
-  pt: {
-    nav: ['Sobre', 'Projetos', 'Formação', 'Outras Atuações', 'Reconhecimentos', 'Contato'],
-    navIds: ['sobre', 'projetos', 'formacao', 'outras-atuacoes', 'reconhecimentos', 'contato'],
-    heroIntro: "Olá, meu nome é",
-    heroDesc: "Sou especialista em Engenharia da Computação, Desenvolvedor Full-Stack e Educador. Meu foco é criar soluções tecnológicas eficientes, explorar a ciência de dados e formar novos talentos em tecnologia.",
-    heroSequence: [
-      'Eu construo sistemas para a web', 1500,
-      'Eu desenvolvo hardware e IoT', 1500,
-      'Eu ensino robótica e programação', 1500,
-      'Eu exploro dados e IA', 1500,
-      'Eu monto redes e infraestruturas', 1500,
-    ],
-    sobreTitulo: "Sobre mim",
-    sobreP1: "Trabalho na interseção entre o <span class=\"text-blue-400 font-semibold\">desenvolvimento de software</span>, a <span class=\"text-blue-400 font-semibold\">engenharia da computação</span> e a <span class=\"text-blue-400 font-semibold\">educação</span>. Tenho facilidade em transitar do <span class=\"text-blue-400 font-semibold\">código front-end e back-end até o hardware físico</span>, resolvendo problemas complexos com código limpo e eficiente.",
-    sobreP2: "Já atuei com TI na iniciativa privada, no setor público e no terceiro setor. Essa vivência me deu uma visão ampla sobre como aplicar a tecnologia em diferentes cenários. Além da programação, possuo experiência prática em <span class=\"text-blue-400 font-semibold\">design gráfico</span> e <span class=\"text-blue-400 font-semibold\">UX/UI</span>, dominando ferramentas para a criação de <span class=\"text-blue-400 font-semibold\">arte final em materiais impressos e digitais</span>. Hoje, divido meu tempo entre construir soluções digitais e liderar iniciativas educacionais, ensinando <span class=\"text-blue-400 font-semibold\">robótica e programação</span>.",
-    sobreP3: "Acredito muito no poder da tecnologia na educação. Sou <span class=\"text-blue-400 font-semibold\">autor de materiais didáticos</span> onde ensino sobre tecnologia, e dedico parte do meu tempo como <span class=\"text-blue-400 font-semibold\">Squad Leader no Code Club Brasil</span>, além de atuar ativamente no Movimento Escoteiro e como músico percussionista.",
-    projetosTitulo: "Alguns trabalhos",
-    formacaoTitulo: "Formação Acadêmica",
-    atuacoesTitulo: "Outras Atuações",
-    reconhecimentosTitulo: "Reconhecimentos",
-    premiosTitulo: "Prêmios e Certificações",
-    publicacoesTitulo: "Publicações e Artigos",
-    contatoSub: "O que vem a seguir?",
-    contatoTitulo: "Entre em Contato",
-    contatoDesc: "Seja para discutir uma oportunidade, trocar ideias sobre tecnologia ou conversar sobre iniciativas educacionais, minha caixa de entrada está sempre aberta.",
-    btnContato: "Diga Olá",
-    rodape: "Desenvolvido com React por Augusto Queiroz."
-  },
-  en: {
-    nav: ['About', 'Projects', 'Education', 'Other Roles', 'Recognitions', 'Contact'],
-    navIds: ['sobre', 'projetos', 'formacao', 'outras-atuacoes', 'reconhecimentos', 'contato'],
-    heroIntro: "Hi, my name is",
-    heroDesc: "I am a Computer Engineering specialist, Full-Stack Developer, and Educator. My focus is on creating efficient technological solutions, exploring data science, and training new tech talent.",
-    heroSequence: [
-      'I build web systems', 1500,
-      'I develop hardware and IoT', 1500,
-      'I teach robotics and programming', 1500,
-      'I explore data and AI', 1500,
-      'I set up networks and infrastructure', 1500,
-    ],
-    sobreTitulo: "About me",
-    sobreP1: "I work at the intersection of <span class=\"text-blue-400 font-semibold\">software development</span>, <span class=\"text-blue-400 font-semibold\">computer engineering</span>, and <span class=\"text-blue-400 font-semibold\">education</span>. I easily navigate from <span class=\"text-blue-400 font-semibold\">front-end and back-end code to physical hardware</span>, solving complex problems with clean and efficient code.",
-    sobreP2: "I have worked with IT in the private sector, public sector, and non-profits. This experience gave me a broad view of how to apply technology in different scenarios. Besides programming, I have practical experience in <span class=\"text-blue-400 font-semibold\">graphic design</span> and <span class=\"text-blue-400 font-semibold\">UX/UI</span>, mastering tools for creating <span class=\"text-blue-400 font-semibold\">final artwork for print and digital materials</span>. Today, I split my time between building digital solutions and leading educational initiatives, teaching <span class=\"text-blue-400 font-semibold\">robotics and programming</span>.",
-    sobreP3: "I strongly believe in the power of technology in education. I am the <span class=\"text-blue-400 font-semibold\">author of educational materials</span> where I teach technology, and I dedicate part of my time as a <span class=\"text-blue-400 font-semibold\">Squad Leader at Code Club Brasil</span>, besides being actively involved in the Scout Movement and as a percussionist.",
-    projetosTitulo: "Some of my work",
-    formacaoTitulo: "Academic Background",
-    atuacoesTitulo: "Other Roles",
-    reconhecimentosTitulo: "Recognitions",
-    premiosTitulo: "Awards & Certifications",
-    publicacoesTitulo: "Publications & Articles",
-    contatoSub: "What's next?",
-    contatoTitulo: "Get In Touch",
-    contatoDesc: "Whether it's to discuss an opportunity, exchange ideas about technology, or talk about educational initiatives, my inbox is always open.",
-    btnContato: "Say Hello",
-    rodape: "Built with React by Augusto Queiroz."
-  }
-};
-
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [lang, setLang] = useState('pt');
@@ -113,18 +53,19 @@ export default function App() {
       nav: ['Sobre', 'Projetos', 'Formação', 'Outras Atuações', 'Reconhecimentos', 'Contato'],
       navIds: ['sobre', 'projetos', 'formacao', 'outras-atuacoes', 'reconhecimentos', 'contato'],
       heroIntro: "Olá, meu nome é",
-      heroDesc: "Sou especialista em Engenharia da Computação, Desenvolvedor Full-Stack e Educador. Meu foco é criar soluções tecnológicas eficientes, explorar a ciência de dados e formar novos talentos em tecnologia.",
+      heroDesc: "Engenheiro da Computação, Pesquisador de Machine Learning, Cientista de Dados e Educador. Atuo na interseção entre inteligência artificial, desenvolvimento de software e formação de novos talentos em tecnologia.",
       heroSequence: [
+        'Eu pesquiso Machine Learning', 1500,
+        'Eu analiso dados com Python e IA', 1500,
         'Eu construo sistemas para a web', 1500,
         'Eu desenvolvo hardware e IoT', 1500,
         'Eu ensino robótica e programação', 1500,
-        'Eu exploro dados e IA', 1500,
         'Eu monto redes e infraestruturas', 1500,
       ],
       sobreTitulo: "Sobre mim",
-      sobreP1: "Trabalho na interseção entre o <span class=\"text-blue-400 font-semibold\">desenvolvimento de software</span>, a <span class=\"text-blue-400 font-semibold\">engenharia da computação</span> e a <span class=\"text-blue-400 font-semibold\">educação</span>. Tenho facilidade em transitar do <span class=\"text-blue-400 font-semibold\">código front-end e back-end até o hardware físico</span>, resolvendo problemas complexos com código limpo e eficiente.",
-      sobreP2: "Já atuei com TI na iniciativa privada, no setor público e no terceiro setor. Essa vivência me deu uma visão ampla sobre como aplicar a tecnologia em diferentes cenários. Além da programação, possuo experiência prática em <span class=\"text-blue-400 font-semibold\">design gráfico</span> e <span class=\"text-blue-400 font-semibold\">UX/UI</span>, dominando ferramentas para a criação de <span class=\"text-blue-400 font-semibold\">arte final em materiais impressos e digitais</span>. Hoje, divido meu tempo entre construir soluções digitais e liderar iniciativas educacionais, ensinando <span class=\"text-blue-400 font-semibold\">robótica e programação</span>.",
-      sobreP3: "Acredito muito no poder da tecnologia na educação. Sou <span class=\"text-blue-400 font-semibold\">autor de materiais didáticos</span> onde ensino sobre tecnologia, e dedico parte do meu tempo como <span class=\"text-blue-400 font-semibold\">Squad Leader no Code Club Brasil</span>, além de atuar ativamente no Movimento Escoteiro e como músico percussionista.",
+      sobreP1: "Trabalho na interseção entre a <span class=\"text-blue-400 font-semibold\">ciência de dados</span>, o <span class=\"text-blue-400 font-semibold\">desenvolvimento de software</span> e a <span class=\"text-blue-400 font-semibold\">educação</span>. Atualmente sou <span class=\"text-blue-400 font-semibold\">Pesquisador de Machine Learning na Firjan SENAI SESI</span>, desenvolvendo algoritmos de IA aplicados a projetos industriais, e <span class=\"text-blue-400 font-semibold\">Cientista de Dados na Associação Raízes (Planeja+ / Petrobras)</span>, com modelagem preditiva, pipelines ETL e painéis de BI.",
+      sobreP2: "Já atuei com TI na iniciativa privada, no setor público e no terceiro setor. Essa vivência me deu uma visão ampla sobre como aplicar a tecnologia em diferentes cenários. Além da programação, possuo experiência prática em <span class=\"text-blue-400 font-semibold\">design gráfico</span> e <span class=\"text-blue-400 font-semibold\">UX/UI</span>, dominando ferramentas para a criação de <span class=\"text-blue-400 font-semibold\">arte final em materiais impressos e digitais</span>. Hoje, divido meu tempo entre pesquisa aplicada em IA, desenvolvimento de soluções digitais e <span class=\"text-blue-400 font-semibold\">docência em pós-graduação e cursos de tecnologia</span>.",
+      sobreP3: "Acredito no poder da tecnologia na educação. Sou <span class=\"text-blue-400 font-semibold\">autor de livros didáticos</span>, <span class=\"text-blue-400 font-semibold\">professor de pós-graduação em Engenharia de Dados e IA</span>, e dedico parte do meu tempo como <span class=\"text-blue-400 font-semibold\">Squad Leader no Code Club Brasil</span>, além de atuar ativamente no Movimento Escoteiro e como músico percussionista.",
       projetosTitulo: "Alguns trabalhos",
       formacaoTitulo: "Formação Acadêmica",
       atuacoesTitulo: "Outras Atuações",
@@ -141,18 +82,19 @@ export default function App() {
       nav: ['About', 'Projects', 'Education', 'Other Roles', 'Recognitions', 'Contact'],
       navIds: ['sobre', 'projetos', 'formacao', 'outras-atuacoes', 'reconhecimentos', 'contato'],
       heroIntro: "Hi, my name is",
-      heroDesc: "I am a Computer Engineering specialist, Full-Stack Developer, and Educator. My focus is on creating efficient technological solutions, exploring data science, and training new tech talent.",
+      heroDesc: "Computer Engineer, Machine Learning Researcher, Data Scientist, and Educator. I work at the intersection of artificial intelligence, software development, and training new tech talent.",
       heroSequence: [
+        'I research Machine Learning', 1500,
+        'I analyze data with Python and AI', 1500,
         'I build web systems', 1500,
         'I develop hardware and IoT', 1500,
         'I teach robotics and programming', 1500,
-        'I explore data and AI', 1500,
         'I set up networks and infrastructure', 1500,
       ],
       sobreTitulo: "About me",
-      sobreP1: "I work at the intersection of <span class=\"text-blue-400 font-semibold\">software development</span>, <span class=\"text-blue-400 font-semibold\">computer engineering</span>, and <span class=\"text-blue-400 font-semibold\">education</span>. I easily navigate from <span class=\"text-blue-400 font-semibold\">front-end and back-end code to physical hardware</span>, solving complex problems with clean and efficient code.",
-      sobreP2: "I have worked with IT in the private sector, public sector, and non-profits. This experience gave me a broad view of how to apply technology in different scenarios. Besides programming, I have practical experience in <span class=\"text-blue-400 font-semibold\">graphic design</span> and <span class=\"text-blue-400 font-semibold\">UX/UI</span>, mastering tools for creating <span class=\"text-blue-400 font-semibold\">final artwork for print and digital materials</span>. Today, I split my time between building digital solutions and leading educational initiatives, teaching <span class=\"text-blue-400 font-semibold\">robotics and programming</span>.",
-      sobreP3: "I strongly believe in the power of technology in education. I am the <span class=\"text-blue-400 font-semibold\">author of educational materials</span> where I teach technology, and I dedicate part of my time as a <span class=\"text-blue-400 font-semibold\">Squad Leader at Code Club Brasil</span>, besides being actively involved in the Scout Movement and as a percussionist.",
+      sobreP1: "I work at the intersection of <span class=\"text-blue-400 font-semibold\">data science</span>, <span class=\"text-blue-400 font-semibold\">software development</span>, and <span class=\"text-blue-400 font-semibold\">education</span>. I am currently a <span class=\"text-blue-400 font-semibold\">Machine Learning Researcher at Firjan SENAI SESI</span>, developing AI algorithms applied to industrial projects, and a <span class=\"text-blue-400 font-semibold\">Data Scientist at Associação Raízes (Planeja+ / Petrobras)</span>, with predictive modeling, ETL pipelines, and BI dashboards.",
+      sobreP2: "I have worked with IT in the private sector, public sector, and non-profits. This experience gave me a broad view of how to apply technology in different scenarios. Besides programming, I have practical experience in <span class=\"text-blue-400 font-semibold\">graphic design</span> and <span class=\"text-blue-400 font-semibold\">UX/UI</span>, mastering tools for creating <span class=\"text-blue-400 font-semibold\">final artwork for print and digital materials</span>. Today, I split my time between applied AI research, building digital solutions, and <span class=\"text-blue-400 font-semibold\">teaching postgraduate and technology courses</span>.",
+      sobreP3: "I believe in the power of technology in education. I am the <span class=\"text-blue-400 font-semibold\">author of educational books</span>, a <span class=\"text-blue-400 font-semibold\">postgraduate professor of Data Engineering and AI</span>, and I dedicate part of my time as a <span class=\"text-blue-400 font-semibold\">Squad Leader at Code Club Brasil</span>, besides being actively involved in the Scout Movement and as a percussionist.",
       projetosTitulo: "Some of my work",
       formacaoTitulo: "Academic Background",
       atuacoesTitulo: "Other Roles",
@@ -193,6 +135,24 @@ export default function App() {
       techs: ["Next.js", "Tailwind CSS", "Node.js", "PostgreSQL", "Prisma"],
       link: "https://www.gallboats.com.br",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/gallboats.jpg",
+      icone: <FaGlobe className="text-blue-400" size={20} />
+    },
+    {
+      titulo: "Planeja+ Raízes",
+      tipo: lang === 'pt' ? "Ciência de Dados | Petrobras" : "Data Science | Petrobras",
+      descricao: lang === 'pt' ? "Atuação como Cientista de Dados na Associação Raízes dentro do programa Planeja+, parceria com a Petrobras. Desenvolvimento de modelos de Machine Learning, pipelines ETL, painéis de BI e data storytelling para apoio à tomada de decisão em projetos sociais e ambientais." : "Data Scientist role at Associação Raízes within the Planeja+ program, in partnership with Petrobras. Development of Machine Learning models, ETL pipelines, BI dashboards, and data storytelling to support decision-making in social and environmental projects.",
+      techs: ["Python", "Pandas", "Scikit-Learn", "SQL", "Power BI", "ETL"],
+      link: null,
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/planeja-raizes.jpg",
+      icone: <FaBrain className="text-blue-400" size={20} />
+    },
+    {
+      titulo: "Inusitech",
+      tipo: lang === 'pt' ? "Site Institucional" : "Institutional Website",
+      descricao: lang === 'pt' ? "Site institucional desenvolvido para a Inusitech, empresa de engenharia elétrica de Itaperuna/RJ especializada em proteção de qualidade de energia e engenharia clínica. Catálogo de produtos, página de contato com WhatsApp integrado e SEO otimizado." : "Institutional website developed for Inusitech, an electrical engineering company from Itaperuna/RJ specializing in power quality protection and clinical engineering. Product catalog, WhatsApp-integrated contact page, and optimized SEO.",
+      techs: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Vercel"],
+      link: "https://www.inusitech.com",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/inusitech.jpg",
       icone: <FaGlobe className="text-blue-400" size={20} />
     },
     {
@@ -254,7 +214,7 @@ export default function App() {
       tipo: lang === 'pt' ? "Portal de Informações" : "Information Portal",
       descricao: lang === 'pt' ? "Portal dinâmico de turismo, comércio e serviços locais. Projetado para valorizar a cidade de Guapimirim e facilitar o acesso a informações relevantes ao público local e turistas." : "Dynamic portal for tourism, commerce, and local services. Designed to highlight the city of Guapimirim and provide relevant information for locals and tourists.",
       techs: ["React", "Frontend", "Backend", "Python", "Django"],
-      link: "https://guapimirim-portal.vercel.app/a-cidade",
+      link: "https://www.guiaguapimirim.com.br",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/guiaguapimirim.jpg",
       icone: <FaGlobe className="text-blue-400" size={20} />
     },
@@ -319,6 +279,12 @@ export default function App() {
 
   const formacaoList = [
     {
+      titulo: lang === 'pt' ? "Gestão de Cidades Inteligentes e Sustentáveis" : "Smart and Sustainable Cities Management",
+      tipo: lang === 'pt' ? "Graduação, Tecnólogo (em andamento) | UNICIVE - Centro Universitário Cidade Verde" : "Degree, Technologist (in progress) | UNICIVE - Centro Universitário Cidade Verde",
+      desc: lang === 'pt' ? "Segunda graduação focada em planejamento urbano sustentável, uso de tecnologias inteligentes para gestão pública, mobilidade, energia e meio ambiente em contextos urbanos." : "Second degree focused on sustainable urban planning, use of smart technologies for public management, mobility, energy, and environment in urban contexts.",
+      icone: <FaGlobe size={16} className="text-white" />
+    },
+    {
       titulo: "Business Intelligence, Big Data e Inteligência Artificial",
       tipo: lang === 'pt' ? "Pós-graduação, Especialização | Faculdade Focus" : "Postgraduate, Specialization | Faculdade Focus",
       desc: lang === 'pt' ? "Especialização em análise de grandes volumes de dados, modelagem preditiva e soluções baseadas em inteligência artificial, permitindo decisões automatizadas, previsões de tendências e personalização de serviços." : "Specialization in large-scale data analysis, predictive modeling, and AI-based solutions, enabling automated decisions, trend forecasting, and service personalization.",
@@ -345,6 +311,11 @@ export default function App() {
   ];
 
   const atuacoesList = [
+    {
+      titulo: lang === 'pt' ? "Professor de Pós-Graduação em Engenharia de Dados e IA" : "Postgraduate Professor in Data Engineering & AI",
+      desc: lang === 'pt' ? "Docente na Pós-Graduação Lato Sensu em Engenharia de Dados e Inteligência Artificial pela Faculdade Sirius (nota 5 no MEC), em parceria com a Comunidade Estatística (CECD). Aulas na área de arquitetura de dados para profissionais em formação avançada." : "Professor in the Postgraduate Program in Data Engineering and Artificial Intelligence at Faculdade Sirius (MEC score 5), in partnership with Comunidade Estatística (CECD). Teaching data architecture to professionals in advanced training.",
+      icone: <FaGraduationCap size={24} className="text-blue-400" />
+    },
     {
       titulo: "Squad Leader & Instrutor - Code Club Brasil",
       desc: lang === 'pt' ? "Coordenação de líderes regionais e ensino de programação (Scratch, Python, HTML/CSS) para crianças, expandindo o alcance do projeto no Brasil." : "Coordination of regional leaders and teaching programming (Scratch, Python, HTML/CSS) to children, expanding the project's reach in Brazil.",
@@ -599,7 +570,7 @@ export default function App() {
             <div className="absolute inset-0 border-2 border-blue-400/60 rounded-full translate-x-5 translate-y-5 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-300"></div>
             <div className="absolute inset-0 bg-blue-400/10 rounded-full group-hover:bg-transparent transition-colors duration-300 z-10"></div>
             <img
-              src="https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4206442U7"
+              src={`${import.meta.env.BASE_URL}foto_augusto.jpg`}
               alt="Augusto Queiroz"
               className="absolute inset-0 w-full h-full object-cover rounded-full z-0"
             />

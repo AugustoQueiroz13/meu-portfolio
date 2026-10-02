@@ -109,13 +109,13 @@ export default function App() {
 
   const projetos = [
     {
-      titulo: lang === 'pt' ? "Pós-Graduação em Engenharia de Dados e IA" : "Postgraduate in Data Engineering & AI",
-      tipo: lang === 'pt' ? "Docente | Faculdade Sirius / CECD" : "Professor | Faculdade Sirius / CECD",
-      descricao: lang === 'pt' ? "Docente na Pós-Graduação Lato Sensu em Engenharia de Dados e Inteligência Artificial pela Faculdade Sirius (nota 5 no MEC), em parceria com a Comunidade Estatística (CECD). Aulas na área de arquitetura de dados para profissionais em formação avançada." : "Professor in the Postgraduate Program in Data Engineering and Artificial Intelligence at Faculdade Sirius (MEC score 5), in partnership with Comunidade Estatística (CECD). Teaching data architecture to professionals in advanced training.",
-      techs: [lang === 'pt' ? "Ensino" : "Teaching", "Python", "SQL", "Big Data", "Data Architecture"],
-      link: "https://posgraduacaoengenhariadedados.comunidadeestatistica.com.br/",
-      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/pos-graduacao-dados.jpg",
-      icone: <FaGraduationCap className="text-blue-400" size={20} />
+      titulo: "Planeja+ Raízes",
+      tipo: lang === 'pt' ? "Ciência de Dados | Petrobras" : "Data Science | Petrobras",
+      descricao: lang === 'pt' ? "Atuação como Cientista de Dados na Associação Raízes dentro do programa Planeja+, parceria com a Petrobras. Desenvolvimento de modelos de Machine Learning, pipelines ETL, painéis de BI e data storytelling para apoio à tomada de decisão em projetos sociais e ambientais." : "Data Scientist role at Associação Raízes within the Planeja+ program, in partnership with Petrobras. Development of Machine Learning models, ETL pipelines, BI dashboards, and data storytelling to support decision-making in social and environmental projects.",
+      techs: ["Python", "Pandas", "Scikit-Learn", "SQL", "Power BI", "ETL"],
+      link: null,
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/planeja-raizes.jpg",
+      icone: <FaBrain className="text-blue-400" size={20} />
     },
     {
       titulo: lang === 'pt' ? "Firjan SENAI SESI Tecnologia" : "Firjan SENAI SESI Technology",
@@ -127,6 +127,15 @@ export default function App() {
       icone: <FaRobot className="text-blue-400" size={20} />
     },
     {
+      titulo: "Inusitech",
+      tipo: lang === 'pt' ? "Site Institucional" : "Institutional Website",
+      descricao: lang === 'pt' ? "Site institucional desenvolvido para a Inusitech, empresa de engenharia elétrica de Itaperuna/RJ especializada em proteção de qualidade de energia e engenharia clínica. Catálogo de produtos, página de contato com WhatsApp integrado e SEO otimizado." : "Institutional website developed for Inusitech, an electrical engineering company from Itaperuna/RJ specializing in power quality protection and clinical engineering. Product catalog, WhatsApp-integrated contact page, and optimized SEO.",
+      techs: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Vercel"],
+      link: "https://www.inusitech.com",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/inusitech.jpg",
+      icone: <FaGlobe className="text-blue-400" size={20} />
+    },
+    {
       titulo: "SRPA Software",
       tipo: lang === 'pt' ? "Plataforma SaaS" : "SaaS Platform",
       descricao: lang === 'pt' ? "Desenvolvimento de módulos para sistema de gestão empresarial multi-tenant comercializado como SaaS para controles de tarefas, documentos, planejamentos e outros recursos. Cada empresa cliente possui dados isolados por accessKey e companyId, garantindo segurança e escalabilidade." : "Multi-tenant enterprise management system sold as SaaS. Each client company has isolated data via accessKey and companyId, ensuring security and scalability.",
@@ -136,30 +145,21 @@ export default function App() {
       icone: <FaLaptopCode className="text-blue-400" size={20} />
     },
     {
+      titulo: lang === 'pt' ? "Pós-Graduação em Engenharia de Dados e IA" : "Postgraduate in Data Engineering & AI",
+      tipo: lang === 'pt' ? "Docente | Faculdade Sirius / CECD" : "Professor | Faculdade Sirius / CECD",
+      descricao: lang === 'pt' ? "Docente na Pós-Graduação Lato Sensu em Engenharia de Dados e Inteligência Artificial pela Faculdade Sirius (nota 5 no MEC), em parceria com a Comunidade Estatística (CECD). Aulas na área de arquitetura de dados para profissionais em formação avançada." : "Professor in the Postgraduate Program in Data Engineering and Artificial Intelligence at Faculdade Sirius (MEC score 5), in partnership with Comunidade Estatística (CECD). Teaching data architecture to professionals in advanced training.",
+      techs: [lang === 'pt' ? "Ensino" : "Teaching", "Python", "SQL", "Big Data", "Data Architecture"],
+      link: "https://posgraduacaoengenhariadedados.comunidadeestatistica.com.br/",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/graduacao-dados.jpg",
+      icone: <FaGraduationCap className="text-blue-400" size={20} />
+    },
+    {
       titulo: "Gall Boats",
       tipo: lang === 'pt' ? "Site Institucional" : "Institutional Website",
       descricao: lang === 'pt' ? "Site institucional desenvolvido para a Gall Boats, empresa de serviços marítimos com certificação ISO 9001 e atuação em offshore, salvamento e representação da bandeira Mercury. Identidade visual conforme padrão da marca navy blue, gold, e white." : "Institutional website developed for Gall Boats, a maritime services company with ISO 9001 certification, operating in offshore, salvage, and Mercury dealership. Visual identity in navy blue, gold, and white.",
       techs: ["Next.js", "Tailwind CSS", "Node.js", "PostgreSQL", "Prisma"],
       link: "https://www.gallboats.com.br",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/gallboats.jpg",
-      icone: <FaGlobe className="text-blue-400" size={20} />
-    },
-    {
-      titulo: "Planeja+ Raízes",
-      tipo: lang === 'pt' ? "Ciência de Dados | Petrobras" : "Data Science | Petrobras",
-      descricao: lang === 'pt' ? "Atuação como Cientista de Dados na Associação Raízes dentro do programa Planeja+, parceria com a Petrobras. Desenvolvimento de modelos de Machine Learning, pipelines ETL, painéis de BI e data storytelling para apoio à tomada de decisão em projetos sociais e ambientais." : "Data Scientist role at Associação Raízes within the Planeja+ program, in partnership with Petrobras. Development of Machine Learning models, ETL pipelines, BI dashboards, and data storytelling to support decision-making in social and environmental projects.",
-      techs: ["Python", "Pandas", "Scikit-Learn", "SQL", "Power BI", "ETL"],
-      link: null,
-      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/planeja-raizes.jpg",
-      icone: <FaBrain className="text-blue-400" size={20} />
-    },
-    {
-      titulo: "Inusitech",
-      tipo: lang === 'pt' ? "Site Institucional" : "Institutional Website",
-      descricao: lang === 'pt' ? "Site institucional desenvolvido para a Inusitech, empresa de engenharia elétrica de Itaperuna/RJ especializada em proteção de qualidade de energia e engenharia clínica. Catálogo de produtos, página de contato com WhatsApp integrado e SEO otimizado." : "Institutional website developed for Inusitech, an electrical engineering company from Itaperuna/RJ specializing in power quality protection and clinical engineering. Product catalog, WhatsApp-integrated contact page, and optimized SEO.",
-      techs: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Vercel"],
-      link: "https://www.inusitech.com",
-      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/inusitech.jpg",
       icone: <FaGlobe className="text-blue-400" size={20} />
     },
     {

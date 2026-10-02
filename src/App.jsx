@@ -53,20 +53,19 @@ export default function App() {
       nav: ['Sobre', 'Projetos', 'Formação', 'Outras Atuações', 'Reconhecimentos', 'Contato'],
       navIds: ['sobre', 'projetos', 'formacao', 'outras-atuacoes', 'reconhecimentos', 'contato'],
       heroIntro: "Olá, meu nome é",
-      heroDesc: "Engenheiro da Computação, Pesquisador de Machine Learning, Cientista de Dados e Educador. Atuo na interseção entre inteligência artificial, desenvolvimento de software e formação de novos talentos em tecnologia.",
+      heroDesc: "Sou especialista em Engenharia da Computação, Cientista de Dados e Educador. Meu foco é criar soluções tecnológicas eficientes, explorar a ciência de dados e formar novos talentos em tecnologia.",
       heroSequence: [
-        'Eu pesquiso Machine Learning', 1500,
-        'Eu analiso dados com Python e IA', 1500,
         'Eu construo sistemas para a web', 1500,
         'Eu desenvolvo hardware e IoT', 1500,
         'Eu ensino robótica e programação', 1500,
+        'Eu exploro dados e IA', 1500,
         'Eu monto redes e infraestruturas', 1500,
       ],
       sobreTitulo: "Sobre mim",
-      sobreP1: "Trabalho na interseção entre a <span class=\"text-blue-400 font-semibold\">ciência de dados</span>, o <span class=\"text-blue-400 font-semibold\">desenvolvimento de software</span> e a <span class=\"text-blue-400 font-semibold\">educação</span>. Atualmente sou <span class=\"text-blue-400 font-semibold\">Pesquisador de Machine Learning na Firjan SENAI SESI</span>, desenvolvendo algoritmos de IA aplicados a projetos industriais, e <span class=\"text-blue-400 font-semibold\">Cientista de Dados na Associação Raízes (Planeja+ / Petrobras)</span>, com modelagem preditiva, pipelines ETL e painéis de BI.",
-      sobreP2: "Já atuei com TI na iniciativa privada, no setor público e no terceiro setor. Essa vivência me deu uma visão ampla sobre como aplicar a tecnologia em diferentes cenários. Além da programação, possuo experiência prática em <span class=\"text-blue-400 font-semibold\">design gráfico</span> e <span class=\"text-blue-400 font-semibold\">UX/UI</span>, dominando ferramentas para a criação de <span class=\"text-blue-400 font-semibold\">arte final em materiais impressos e digitais</span>. Hoje, divido meu tempo entre pesquisa aplicada em IA, desenvolvimento de soluções digitais e <span class=\"text-blue-400 font-semibold\">docência em pós-graduação e cursos de tecnologia</span>.",
-      sobreP3: "Acredito no poder da tecnologia na educação. Sou <span class=\"text-blue-400 font-semibold\">autor de livros didáticos</span>, <span class=\"text-blue-400 font-semibold\">professor de pós-graduação em Engenharia de Dados e IA</span>, e dedico parte do meu tempo como <span class=\"text-blue-400 font-semibold\">Squad Leader no Code Club Brasil</span>, além de atuar ativamente no Movimento Escoteiro e como músico percussionista.",
-      projetosTitulo: "Alguns trabalhos",
+      sobreP1: "Trabalho na interseção entre o <span class=\"text-blue-400 font-semibold\">desenvolvimento de software</span>, a <span class=\"text-blue-400 font-semibold\">engenharia da computação</span> e a <span class=\"text-blue-400 font-semibold\">educação</span>. Tenho facilidade em transitar do <span class=\"text-blue-400 font-semibold\">código front-end e back-end até o hardware físico</span>, resolvendo problemas complexos com código limpo e eficiente. Atuo também como <span class=\"text-blue-400 font-semibold\">Engenheiro de Machine Learning</span> e <span class=\"text-blue-400 font-semibold\">Cientista de Dados</span>, aplicando inteligência artificial e análise de dados a projetos reais.",
+      sobreP2: "Já atuei com TI na iniciativa privada, no setor público e no terceiro setor. Essa vivência me deu uma visão ampla sobre como aplicar a tecnologia em diferentes cenários. Além da programação, possuo experiência prática em <span class=\"text-blue-400 font-semibold\">design gráfico</span> e <span class=\"text-blue-400 font-semibold\">UX/UI</span>, dominando ferramentas para a criação de <span class=\"text-blue-400 font-semibold\">arte final em materiais impressos e digitais</span>. Hoje, divido meu tempo entre construir soluções digitais e liderar iniciativas educacionais, ensinando <span class=\"text-blue-400 font-semibold\">robótica e programação</span>.",
+      sobreP3: "Acredito muito no poder da tecnologia na educação. Sou <span class=\"text-blue-400 font-semibold\">autor de materiais didáticos</span> onde ensino sobre tecnologia, <span class=\"text-blue-400 font-semibold\">professor de pós-graduação em Engenharia de Dados e IA</span>, e dedico parte do meu tempo como <span class=\"text-blue-400 font-semibold\">Squad Leader no Code Club Brasil</span>, além de atuar ativamente no Movimento Escoteiro e como músico percussionista.",
+      projetosTitulo: "Experiências Profissionais",
       formacaoTitulo: "Formação Acadêmica",
       atuacoesTitulo: "Outras Atuações",
       reconhecimentosTitulo: "Reconhecimentos",
@@ -82,20 +81,19 @@ export default function App() {
       nav: ['About', 'Projects', 'Education', 'Other Roles', 'Recognitions', 'Contact'],
       navIds: ['sobre', 'projetos', 'formacao', 'outras-atuacoes', 'reconhecimentos', 'contato'],
       heroIntro: "Hi, my name is",
-      heroDesc: "Computer Engineer, Machine Learning Researcher, Data Scientist, and Educator. I work at the intersection of artificial intelligence, software development, and training new tech talent.",
+      heroDesc: "I am a Computer Engineering specialist, Data Scientist, and Educator. My focus is on creating efficient technological solutions, exploring data science, and training new tech talent.",
       heroSequence: [
-        'I research Machine Learning', 1500,
-        'I analyze data with Python and AI', 1500,
         'I build web systems', 1500,
         'I develop hardware and IoT', 1500,
         'I teach robotics and programming', 1500,
+        'I explore data and AI', 1500,
         'I set up networks and infrastructure', 1500,
       ],
       sobreTitulo: "About me",
-      sobreP1: "I work at the intersection of <span class=\"text-blue-400 font-semibold\">data science</span>, <span class=\"text-blue-400 font-semibold\">software development</span>, and <span class=\"text-blue-400 font-semibold\">education</span>. I am currently a <span class=\"text-blue-400 font-semibold\">Machine Learning Researcher at Firjan SENAI SESI</span>, developing AI algorithms applied to industrial projects, and a <span class=\"text-blue-400 font-semibold\">Data Scientist at Associação Raízes (Planeja+ / Petrobras)</span>, with predictive modeling, ETL pipelines, and BI dashboards.",
-      sobreP2: "I have worked with IT in the private sector, public sector, and non-profits. This experience gave me a broad view of how to apply technology in different scenarios. Besides programming, I have practical experience in <span class=\"text-blue-400 font-semibold\">graphic design</span> and <span class=\"text-blue-400 font-semibold\">UX/UI</span>, mastering tools for creating <span class=\"text-blue-400 font-semibold\">final artwork for print and digital materials</span>. Today, I split my time between applied AI research, building digital solutions, and <span class=\"text-blue-400 font-semibold\">teaching postgraduate and technology courses</span>.",
-      sobreP3: "I believe in the power of technology in education. I am the <span class=\"text-blue-400 font-semibold\">author of educational books</span>, a <span class=\"text-blue-400 font-semibold\">postgraduate professor of Data Engineering and AI</span>, and I dedicate part of my time as a <span class=\"text-blue-400 font-semibold\">Squad Leader at Code Club Brasil</span>, besides being actively involved in the Scout Movement and as a percussionist.",
-      projetosTitulo: "Some of my work",
+      sobreP1: "I work at the intersection of <span class=\"text-blue-400 font-semibold\">software development</span>, <span class=\"text-blue-400 font-semibold\">computer engineering</span>, and <span class=\"text-blue-400 font-semibold\">education</span>. I easily navigate from <span class=\"text-blue-400 font-semibold\">front-end and back-end code to physical hardware</span>, solving complex problems with clean and efficient code. I also work as a <span class=\"text-blue-400 font-semibold\">Machine Learning Engineer</span> and <span class=\"text-blue-400 font-semibold\">Data Scientist</span>, applying artificial intelligence and data analysis to real-world projects.",
+      sobreP2: "I have worked with IT in the private sector, public sector, and non-profits. This experience gave me a broad view of how to apply technology in different scenarios. Besides programming, I have practical experience in <span class=\"text-blue-400 font-semibold\">graphic design</span> and <span class=\"text-blue-400 font-semibold\">UX/UI</span>, mastering tools for creating <span class=\"text-blue-400 font-semibold\">final artwork for print and digital materials</span>. Today, I split my time between building digital solutions and leading educational initiatives, teaching <span class=\"text-blue-400 font-semibold\">robotics and programming</span>.",
+      sobreP3: "I strongly believe in the power of technology in education. I am the <span class=\"text-blue-400 font-semibold\">author of educational materials</span> where I teach technology, a <span class=\"text-blue-400 font-semibold\">postgraduate professor of Data Engineering and AI</span>, and I dedicate part of my time as a <span class=\"text-blue-400 font-semibold\">Squad Leader at Code Club Brasil</span>, besides being actively involved in the Scout Movement and as a percussionist.",
+      projetosTitulo: "Professional Experience",
       formacaoTitulo: "Academic Background",
       atuacoesTitulo: "Other Roles",
       reconhecimentosTitulo: "Recognitions",
@@ -110,6 +108,15 @@ export default function App() {
   };
 
   const projetos = [
+    {
+      titulo: lang === 'pt' ? "Pós-Graduação em Engenharia de Dados e IA" : "Postgraduate in Data Engineering & AI",
+      tipo: lang === 'pt' ? "Docente | Faculdade Sirius / CECD" : "Professor | Faculdade Sirius / CECD",
+      descricao: lang === 'pt' ? "Docente na Pós-Graduação Lato Sensu em Engenharia de Dados e Inteligência Artificial pela Faculdade Sirius (nota 5 no MEC), em parceria com a Comunidade Estatística (CECD). Aulas na área de arquitetura de dados para profissionais em formação avançada." : "Professor in the Postgraduate Program in Data Engineering and Artificial Intelligence at Faculdade Sirius (MEC score 5), in partnership with Comunidade Estatística (CECD). Teaching data architecture to professionals in advanced training.",
+      techs: [lang === 'pt' ? "Ensino" : "Teaching", "Python", "SQL", "Big Data", "Data Architecture"],
+      link: "https://posgraduacaoengenhariadedados.comunidadeestatistica.com.br/",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/pos-graduacao-dados.jpg",
+      icone: <FaGraduationCap className="text-blue-400" size={20} />
+    },
     {
       titulo: lang === 'pt' ? "Firjan SENAI SESI Tecnologia" : "Firjan SENAI SESI Technology",
       tipo: lang === 'pt' ? "Pesquisa & Desenvolvimento | Bolsista" : "Research & Development | Scholar",
@@ -311,11 +318,6 @@ export default function App() {
   ];
 
   const atuacoesList = [
-    {
-      titulo: lang === 'pt' ? "Professor de Pós-Graduação em Engenharia de Dados e IA" : "Postgraduate Professor in Data Engineering & AI",
-      desc: lang === 'pt' ? "Docente na Pós-Graduação Lato Sensu em Engenharia de Dados e Inteligência Artificial pela Faculdade Sirius (nota 5 no MEC), em parceria com a Comunidade Estatística (CECD). Aulas na área de arquitetura de dados para profissionais em formação avançada." : "Professor in the Postgraduate Program in Data Engineering and Artificial Intelligence at Faculdade Sirius (MEC score 5), in partnership with Comunidade Estatística (CECD). Teaching data architecture to professionals in advanced training.",
-      icone: <FaGraduationCap size={24} className="text-blue-400" />
-    },
     {
       titulo: "Squad Leader & Instrutor - Code Club Brasil",
       desc: lang === 'pt' ? "Coordenação de líderes regionais e ensino de programação (Scratch, Python, HTML/CSS) para crianças, expandindo o alcance do projeto no Brasil." : "Coordination of regional leaders and teaching programming (Scratch, Python, HTML/CSS) to children, expanding the project's reach in Brazil.",

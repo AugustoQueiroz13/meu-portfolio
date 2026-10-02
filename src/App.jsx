@@ -109,18 +109,18 @@ export default function App() {
 
   const projetos = [
     {
-      titulo: "Planeja+ Raízes",
-      tipo: lang === 'pt' ? "Ciência de Dados | Petrobras" : "Data Science | Petrobras",
-      descricao: lang === 'pt' ? "Atuação como Cientista de Dados na Associação Raízes dentro do programa Planeja+, parceria com a Petrobras. Desenvolvimento de modelos de Machine Learning, pipelines ETL, painéis de BI e data storytelling para apoio à tomada de decisão em projetos sociais e ambientais." : "Data Scientist role at Associação Raízes within the Planeja+ program, in partnership with Petrobras. Development of Machine Learning models, ETL pipelines, BI dashboards, and data storytelling to support decision-making in social and environmental projects.",
+      titulo: lang === 'pt' ? "Programa Planeja+ | Petrobrás" : "Planeja+ Program | Petrobras",
+      tipo: lang === 'pt' ? "Ciência de Dados | Pesquisa" : "Data Science | Research",
+      descricao: lang === 'pt' ? "Atuação como Pesquisador Cientista de Dados na Associação Raízes dentro do programa Planeja+ da Petrobras. Desenvolvimento de modelos de Machine Learning, pipelines ETL, painéis de BI e data storytelling para apoio à tomada de decisão no projeto que é uma medida de mitigação exigida pelo licenciamento ambiental conduzido pelo IBAMA." : "Data Scientist Researcher at Associação Raízes within the Planeja+ program by Petrobras. Development of Machine Learning models, ETL pipelines, BI dashboards, and data storytelling to support decision-making in a project that is a mitigation measure required by the environmental licensing conducted by IBAMA.",
       techs: ["Python", "Pandas", "Scikit-Learn", "SQL", "Power BI", "ETL"],
-      link: null,
+      link: "https://associacaoraizes.org.br/",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/planeja-raizes.jpg",
       icone: <FaBrain className="text-blue-400" size={20} />
     },
     {
-      titulo: lang === 'pt' ? "Firjan SENAI SESI Tecnologia" : "Firjan SENAI SESI Technology",
+      titulo: lang === 'pt' ? "Centro de Tecnologia da Firjan SENAI SESI" : "Firjan SENAI SESI Technology Center",
       tipo: lang === 'pt' ? "Pesquisa & Desenvolvimento | Bolsista" : "Research & Development | Scholar",
-      descricao: lang === 'pt' ? "Atuação como Engenheiro de Machine Learning Pesquisador Bolsista no Instituto SENAI de Inovação em Química Verde (ISI-QV). Desenvolvimento de algoritmos de aprendizado de máquina aplicados a projetos de Pesquisa, Desenvolvimento e Inovação (PDI) com foco em solucionar problemas industriais reais. Integração de modelos de IA com hardwares dedicados, especialmente Raspberry Pi e placas embarcadas, para operação de serviços tecnológicos em ambiente de produção." : "Role as Machine Learning Engineer Scholar at SENAI Institute for Green Chemistry Innovation (ISI-QV). Development of machine learning algorithms applied to Research, Development & Innovation projects focusing on solving real industrial problems. Integration of AI models with dedicated hardware, especially Raspberry Pi and embedded boards, for operation of technological services in production environments.",
+      descricao: lang === 'pt' ? "Atuação como Engenheiro de Machine Learning Pesquisador Bolsista no Instituto SENAI de Inovação em Química Verde (ISI-QV). Desenvolvimento de algoritmos de aprendizado de máquina em sistemas embarcados aplicados a projetos de Pesquisa, Desenvolvimento e Inovação (PDI)." : "Role as Machine Learning Engineer Scholar at SENAI Institute for Green Chemistry Innovation (ISI-QV). Development of machine learning algorithms in embedded systems applied to Research, Development & Innovation projects.",
       techs: ["Python", "Pandas", "Scikit-Learn", "Raspberry Pi", "Edge AI", "Docker", "SQL", "Git"],
       link: "https://www.firjan.com.br/senai/empresas/competitividade-empresarial/tecnologia-inovacao/linhas-de-pesquisa.htm",
       imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/firjan-sesi-senai.jfif",
@@ -145,8 +145,8 @@ export default function App() {
       icone: <FaLaptopCode className="text-blue-400" size={20} />
     },
     {
-      titulo: lang === 'pt' ? "Pós-Graduação em Engenharia de Dados e IA" : "Postgraduate in Data Engineering & AI",
-      tipo: lang === 'pt' ? "Docente | Faculdade Sirius / CECD" : "Professor | Faculdade Sirius / CECD",
+      titulo: lang === 'pt' ? "Faculdade Sirius / CECD" : "Faculdade Sirius / CECD",
+      tipo: lang === 'pt' ? "Docente | Pós Graduação" : "Professor | Postgraduate",
       descricao: lang === 'pt' ? "Docente na Pós-Graduação Lato Sensu em Engenharia de Dados e Inteligência Artificial pela Faculdade Sirius (nota 5 no MEC), em parceria com a Comunidade Estatística (CECD). Aulas na área de arquitetura de dados para profissionais em formação avançada." : "Professor in the Postgraduate Program in Data Engineering and Artificial Intelligence at Faculdade Sirius (MEC score 5), in partnership with Comunidade Estatística (CECD). Teaching data architecture to professionals in advanced training.",
       techs: [lang === 'pt' ? "Ensino" : "Teaching", "Python", "SQL", "Big Data", "Data Architecture"],
       link: "https://posgraduacaoengenhariadedados.comunidadeestatistica.com.br/",
@@ -182,7 +182,7 @@ export default function App() {
     },
     {
       titulo: lang === 'pt' ? "Céu da Águia Dourada" : "Golden Eagle Sky",
-      tipo: lang === 'pt' ? "Plataforma Institucional" : "Institutional Platform",
+      tipo: lang === 'pt' ? "Site Institucional" : "Institutional Website",
       descricao: lang === 'pt' ? "Página responsiva desenvolvida para o templo neo-xamânico. Projetada com foco nas informações do local para frequentadores e visitantes." : "Responsive page developed for the neo-shamanic temple. Designed with a focus on providing local information for attendees and visitors.",
       techs: ["WordPress", "Web Design", "CMS"],
       link: "https://www.ceudaaguiadourada.com.br",

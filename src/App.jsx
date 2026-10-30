@@ -164,11 +164,11 @@ export default function App() {
     },
     {
       titulo: lang === 'pt' ? "Bolsa Futuro Digital" : "Digital Future Grant",
-      tipo: lang === 'pt' ? "Plataforma de Portfólio" : "Portfolio Platform",
+      tipo: lang === 'pt' ? "Docente | Curso Técnico" : "Instructor | Technical Course",
       descricao: lang === 'pt' ? "Página desenvolvida para orientar os projetos finais do programa Bolsa Futuro Digital no qual atuei como professor instruindo 40+ alunos nas stacks de JavaScript/React e Python/Django, destacando os trabalhos finais apresentados pelos alunos em aplicações de tecnologias emergentes no ensino baseados na ODS 4." : "Page developed for the Digital Future Grant program, highlighting practical projects and applications of emerging technologies in education.",
       techs: [lang === 'pt' ? "Ensino" : "Teaching", "Python", "Django", "React", "HTML", "CSS", "JavaScript"],
       link: "https://augustoqueiroz13.github.io/projetofinalbfdpetropolis/",
-      imagem: "https://www.hardware.org.br/capacitacao/bfd/rs/inscricao/site_themes/theme_0001/images/site.png",
+      imagem: "https://raw.githubusercontent.com/AugustoQueiroz13/meu-portfolio/refs/heads/main/public/bolsa-futuro-digital.png",
       icone: <FaGraduationCap className="text-blue-400" size={20} />
     },
     {
